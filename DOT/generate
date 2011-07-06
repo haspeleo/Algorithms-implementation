@@ -1,0 +1,18 @@
+#! /bin/bash
+
+#http://geekblog.over-blog.com/article-6305114.html  tableaux en shell
+
+cell=( A B C D E F G H I J );
+nbnodes=5000
+
+for index in "${!cell[@]}"
+do 
+for i in `seq $nbnodes `
+	do
+	
+		echo  "${cell[$index]}1 -> ${cell[$(( index + 1 ))]}$i " 
+	 
+	done
+echo "  "
+done
+

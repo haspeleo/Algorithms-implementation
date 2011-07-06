@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample
+END
+VectorsJUnit3Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample/VectorsJUnit3Test.java
+END
+VectorsJUnit4Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample/VectorsJUnit4Test.java
+END
+JUnit3TestSuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample/JUnit3TestSuite.java
+END
+JUnit4TestSuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample/JUnit4TestSuite.java
+END
+MixJUnit3And4TestSuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample/MixJUnit3And4TestSuite.java
+END
+UtilsJUnit3Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample/UtilsJUnit3Test.java
+END
+UtilsJUnit4Test.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/samples~samples-source-code/!svn/ver/27/samples/java/JUnitSampleSol/test/sample/UtilsJUnit4Test.java
+END

@@ -1,0 +1,15 @@
+#export a path
+http://www.cyberciti.biz/faq/linux-unix-set-java_home-path-variable/
+export PATH=/home/user/mes_prog/:$PATH
+
+
+
+:%s/^M//g : delete embarrassing ^M  you must hold CTRL-V-M together
+
+:%s/$/end_of_line/g : add end_of_line at the end of each line of the file
+
+#shell commands
+http://www.linuxforums.org/articles/using-top-more-efficiently_89.html
+
+code completion under vi 
+http://design.liberta.co.za/articles/code-completion-intellisense-for-cpp-in-vim-with-omnicppcomplete/

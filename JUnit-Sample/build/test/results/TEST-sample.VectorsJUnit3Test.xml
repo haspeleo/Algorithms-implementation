@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="lri9-244" name="sample.VectorsJUnit3Test" tests="2" time="0.131" timestamp="2010-11-25T17:41:16">
+  <properties>
+    <property name="default.javac.source" value="1.6" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="libs.toplink.maven-pom" value="" />
+    <property name="javac.source" value="1.5" />
+    <property name="netbeans.system_http_proxy" value="DIRECT" />
+    <property name="java.home" value="/users/tao/doghmen/jdk1.6.0_22/jre" />
+    <property name="test.src.dir" value="test" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="javadoc.version" value="false" />
+    <property name="libs.CopyLibs.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/ant/extra/org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="java.endorsed.dirs" value="/users/tao/doghmen/jdk1.6.0_22/jre/lib/endorsed" />
+    <property name="libs.MySQLDriver.classpath" value="/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/mysql-connector-java-5.1.6-bin.jar" />
+    <property name="libs.jaxb.javadoc" value="/users/tao/doghmen/netbeans-6.9.1/ide/docs/jaxb-api-doc.zip" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="src.dir" value="src" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="debug-args-line" value="-Xdebug" />
+    <property name="netbeans.hash.code" value="unique=NBJDK_JAVA_JDK089ea7df1-6986-4e28-9f1d-191acec04955_aaaf6f76-6275-4fba-9fb0-978e817f3c4d" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="have.sources" value="true" />
+    <property name="includes" value="**" />
+    <property name="javac.fork" value="false" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="libs.jaxws21.classpath" value="/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/jaxb-impl.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/jaxb-xjc.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/FastInfoset.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/gmbal-api-only.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/http.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/jaxws-rt.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/jaxws-tools.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/management-api.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/mimepull.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/policy.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/saaj-impl.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/stax-ex.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/streambuffer.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/woodstox.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/api/jaxws-api.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/api/jsr181-api.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/api/jsr250-api.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/jaxws22/api/saaj-api.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/activation.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/api/jaxb-api.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/api/jsr173_api.jar" />
+    <property name="libs.swing-app-framework.javadoc" value="/users/tao/doghmen/netbeans-6.9.1/java/docs/appframework-1.0.3-doc.zip" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="java.version" value="1.6.0_22" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="javac.debug" value="true" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="run.classpath" value=":build/classes" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="libs.eclipselink.javadoc" value="" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="netbeans.buildnumber" value="201007282301" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="jna.platform.library.path" value="/usr/lib32:/usr/lib:/lib" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+    <property name="libs.swing-app-framework.maven-pom" value="" />
+    <property name="user.name" value="doghmen" />
+    <property name="empty.dir" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample/build/empty" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="jdk.home" value="/users/tao/doghmen/jdk1.6.0_22" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="netbeans.dirs" value="/users/tao/doghmen/netbeans-6.9.1/nb:/users/tao/doghmen/netbeans-6.9.1/bin/../ergonomics:/users/tao/doghmen/netbeans-6.9.1/ide:/users/tao/doghmen/netbeans-6.9.1/java:/users/tao/doghmen/netbeans-6.9.1/bin/../xml:/users/tao/doghmen/netbeans-6.9.1/apisupport:/users/tao/doghmen/netbeans-6.9.1/bin/../webcommon:/users/tao/doghmen/netbeans-6.9.1/websvccommon:/users/tao/doghmen/netbeans-6.9.1/bin/../enterprise:/users/tao/doghmen/netbeans-6.9.1/bin/../mobility:/users/tao/doghmen/netbeans-6.9.1/profiler:/users/tao/doghmen/netbeans-6.9.1/bin/../ruby:/users/tao/doghmen/netbeans-6.9.1/bin/../python:/users/tao/doghmen/netbeans-6.9.1/bin/../php:/users/tao/doghmen/netbeans-6.9.1/bin/../visualweb:/users/tao/doghmen/netbeans-6.9.1/bin/../soa:/users/tao/doghmen/netbeans-6.9.1/bin/../identity:/users/tao/doghmen/netbeans-6.9.1/bin/../uml:/users/tao/doghmen/netbeans-6.9.1/harness:/users/tao/doghmen/netbeans-6.9.1/bin/../cnd:/users/tao/doghmen/netbeans-6.9.1/bin/../dlight:/users/tao/doghmen/netbeans-6.9.1/bin/../groovy:/users/tao/doghmen/netbeans-6.9.1/bin/../extra:/users/tao/doghmen/netbeans-6.9.1/bin/../javafx:/users/tao/doghmen/netbeans-6.9.1/bin/../javacard:" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="javadoc.author" value="false" />
+    <property name="libs.hibernate-support.javadoc" value="" />
+    <property name="user.timezone" value="" />
+    <property name="netbeans.system_http_non_proxy_hosts" value="" />
+    <property name="libs.spring-framework.maven-pom" value="" />
+    <property name="libs.swing-layout.maven-pom" value="" />
+    <property name="libs.junit.javadoc" value="/users/tao/doghmen/netbeans-6.9.1/java/docs/junit-3.8.2-api.zip" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="path.separator" value=":" />
+    <property name="version-output" value="java version &quot;1.6" />
+    <property name="libs.ejb3-persistence.src" value="" />
+    <property name="libs.absolutelayout.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/AbsoluteLayout.jar" />
+    <property name="libs.jaxb.maven-pom" value="" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="libs.eclipselink.src" value="" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="libs.hibernate-persistence.javadoc" value="" />
+    <property name="libs.ejb3-persistence.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/ejb3-persistence.jar" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|lri9-244" />
+    <property name="built-jar.properties" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample/build/built-jar.properties" />
+    <property name="libs.junit.src" value="" />
+    <property name="ant.file" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample/build.xml" />
+    <property name="libs.junit_4.src" value="/users/tao/doghmen/netbeans-6.9.1/java/docs/junit-4.5-src.jar" />
+    <property name="netbeans.autoupdate.language" value="fr" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="user.language" value="fr" />
+    <property name="libs.spring-framework300.src" value="" />
+    <property name="line.separator" value="
+" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="javac.compilerargs" value="" />
+    <property name="libs.hibernate-support.maven-pom" value="" />
+    <property name="jar.compress" value="false" />
+    <property name="debug-transport-by-os" value="dt_socket" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="ant.file.type.JUnit-Sample-impl" value="file" />
+    <property name="libs.hibernate-persistence.maven-pom" value="" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="javadoc.private" value="false" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="libs.jaxb.src" value="" />
+    <property name="libs.MySQLDriver.javadoc" value="" />
+    <property name="netbeans.dynamic.classpath" value="/users/tao/doghmen/netbeans-6.9.1/platform/core/org-openide-filesystems.jar:/users/tao/doghmen/netbeans-6.9.1/platform/core/core.jar:/users/tao/doghmen/netbeans-6.9.1/platform/core/locale/org-openide-filesystems_pt_BR.jar:/users/tao/doghmen/netbeans-6.9.1/platform/core/locale/org-openide-filesystems_zh_CN.jar:/users/tao/doghmen/netbeans-6.9.1/platform/core/locale/org-openide-filesystems_ja.jar:/users/tao/doghmen/netbeans-6.9.1/platform/core/locale/core_pt_BR.jar:/users/tao/doghmen/netbeans-6.9.1/platform/core/locale/core_zh_CN.jar:/users/tao/doghmen/netbeans-6.9.1/platform/core/locale/core_ja.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/org-netbeans-upgrader.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/locale/org-netbeans-upgrader_pt_BR.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/locale/org-netbeans-upgrader_zh_CN.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/locale/org-netbeans-upgrader_ja.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/locale/core_nb_pt_BR.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/locale/core_nb_zh_CN.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/locale/core_nb_ja.jar:/users/tao/doghmen/netbeans-6.9.1/nb/core/locale/core_nb.jar" />
+    <property name="libs.beans-binding.javadoc" value="/users/tao/doghmen/netbeans-6.9.1/java/docs/beansbinding-1.2.1-doc.zip" />
+    <property name="platform.active" value="default_platform" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="ant.file.type.JUnit-Sample" value="file" />
+    <property name="libs.spring-framework300.classpath" value="/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/commons-logging-1.1.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/cglib-2.2.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-aop-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-asm-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-aspects-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-beans-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-context-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-context-support-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-core-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-expression-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-instrument-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-instrument-tomcat-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-jdbc-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-jms-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-orm-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-oxm-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-test-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-tx-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-web-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-webmvc-portlet-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-webmvc-3.0.2.RELEASE.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring-3.0/spring-struts-3.0.2.RELEASE.jar" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|lri9-244" />
+    <property name="libs.junit_4.javadoc" value="/users/tao/doghmen/netbeans-6.9.1/java/docs/junit-4.5-api.zip" />
+    <property name="jna.boot.library.path" value="/users/tao/doghmen/.netbeans/6.9/var/cache/jna" />
+    <property name="libs.spring-framework.src" value="" />
+    <property name="netbeans.autoupdate.country" value="FR" />
+    <property name="libs.beans-binding.maven-pom" value="" />
+    <property name="do.mkdist" value="true" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="do.archive" value="true" />
+    <property name="dist.jar" value="dist/JUnit-Sample.jar" />
+    <property name="meta.inf.dir" value="src/META-INF" />
+    <property name="ant.version" value="Apache Ant version 1.8.1 compiled on April 30 2010" />
+    <property name="netbeans.home" value="/users/tao/doghmen/netbeans-6.9.1/platform" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="user.properties.file" value="/users/tao/doghmen/.netbeans/6.9/build.properties" />
+    <property name="libs.JWSAntTasks.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/ant/extra/org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="libs.toplink.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/toplink/toplink-essentials.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/toplink/toplink-essentials-agent.jar" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="libs.spring-framework.javadoc" value="" />
+    <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="useJavaUtilZip" value="true" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="libs.eclipselink.maven-pom" value="" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="os.name" value="Linux" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="run.test.classpath" value=":build/classes:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/junit-3.8.2.jar:build/test/classes" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="libs.beans-binding.src" value="" />
+    <property name="libs.junit.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/junit-3.8.2.jar" />
+    <property name="java.library.path" value="/users/tao/doghmen/jdk1.6.0_22/jre/lib/i386/client:/users/tao/doghmen/jdk1.6.0_22/jre/lib/i386:/users/tao/doghmen/jdk1.6.0_22/jre/../lib/i386:/usr/java/packages/lib/i386:/lib:/usr/lib" />
+    <property name="libs.toplink.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="basedir" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="java.class.version" value="50.0" />
+    <property name="sun.awt.exception.handler" value="org.netbeans.core.startup.TopLogging$AWTHandler" />
+    <property name="javac.test.classpath" value=":build/classes:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/junit-3.8.2.jar" />
+    <property name="javac.processorpath" value="" />
+    <property name="ant.home" value="/users/tao/doghmen/netbeans-6.9.1/java/ant" />
+    <property name="libs.hibernate-persistence.src" value="" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="libs.toplink.src" value="" />
+    <property name="javac.test.processorpath" value=":build/classes:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/junit-3.8.2.jar" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="javadoc.preview" value="true" />
+    <property name="libs.MySQLDriver.maven-pom" value="" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.classpath" value="/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/postgresql-8.3-603.jdbc3.jar" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="libs.junit_4.classpath" value="/users/tao/doghmen/netbeans-6.9.1/platform/modules/ext/junit-4.5.jar" />
+    <property name="sun.boot.library.path" value="/users/tao/doghmen/jdk1.6.0_22/jre/lib/i386" />
+    <property name="build.dir" value="build" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="libs.swing-app-framework.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/appframework-1.0.3.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/swing-worker-1.1.jar" />
+    <property name="libs.ejb3-persistence.javadoc" value="" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="libs.hibernate-support.src" value="" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="run.jvmargs" value="" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="ant.project.name" value="JUnit-Sample" />
+    <property name="libs.spring-framework.classpath" value="/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/commons-logging-1.1.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/cglib-2.2.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/spring/spring-2.5.6.SEC01.jar" />
+    <property name="libs.swing-layout.classpath" value="/users/tao/doghmen/netbeans-6.9.1/platform/modules/ext/swing-layout-1.0.4.jar" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="ant.file.JUnit-Sample-impl" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample/nbproject/build-impl.xml" />
+    <property name="libs.jaxb.classpath" value="/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/jaxb-impl.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/jaxb-xjc.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/jaxb1-impl.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/activation.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/api/jaxb-api.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/jaxb/api/jsr173_api.jar" />
+    <property name="work.dir" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample" />
+    <property name="javadoc.use" value="true" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="java.ext.dirs" value="/users/tao/doghmen/jdk1.6.0_22/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="os.version" value="2.6.28-19-generic" />
+    <property name="excludes" value="" />
+    <property name="user.home" value="/users/tao/doghmen" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="user.dir" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample" />
+    <property name="debug-transport" value="dt_socket" />
+    <property name="libs.ejb3-persistence.maven-pom" value="" />
+    <property name="application.args" value="" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="ant.file.JUnit-Sample" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample/build.xml" />
+    <property name="compile.on.save" value="true" />
+    <property name="libs.hibernate-support.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/antlr-2.7.6.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/asm.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/asm-attrs.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/cglib-2.1.3.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/commons-collections-2.1.1.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/commons-logging-1.1.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/dom4j-1.6.1.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/ehcache-1.2.3.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/jdbc2_0-stdext.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/jta.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate3.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-tools.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-annotations.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-commons-annotations.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-entitymanager.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/javassist.jar" />
+    <property name="endorsed.classpath.cmd.line.arg" value="-Xbootclasspath/p:&apos;/users/tao/doghmen/NetBeansProjects/JUnit-Sample/${endorsed.classpath}&apos;" />
+    <property name="jar.index" value="false" />
+    <property name="libs.spring-framework300.javadoc" value="" />
+    <property name="libs.MySQLDriver.src" value="" />
+    <property name="java.vm.version" value="17.1-b03" />
+    <property name="java.class.path" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample/build/classes:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/junit-3.8.2.jar:/users/tao/doghmen/NetBeansProjects/JUnit-Sample/build/test/classes:/users/tao/doghmen/netbeans-6.9.1/java/ant/lib/ant-launcher.jar:/users/tao/doghmen/netbeans-6.9.1/java/ant/lib/ant.jar:/users/tao/doghmen/netbeans-6.9.1/java/ant/patches/72080.jar" />
+    <property name="annotation.processing.processor.options" value="" />
+    <property name="libs.hibernate-persistence.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/antlr-2.7.6.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/asm.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/asm-attrs.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/cglib-2.1.3.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/commons-collections-2.1.1.jar:/users/tao/doghmen/netbeans-6.9.1/ide/modules/ext/commons-logging-1.1.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/dom4j-1.6.1.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/ehcache-1.2.3.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/jdbc2_0-stdext.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/jta.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate3.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-tools.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-annotations.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-commons-annotations.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/hibernate-entitymanager.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/javassist.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/hibernate/ejb3-persistence.jar" />
+    <property name="os.arch" value="i386" />
+    <property name="javac.deprecation" value="false" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="dist.dir" value="dist" />
+    <property name="debug.classpath" value=":build/classes" />
+    <property name="netbeans.user" value="/users/tao/doghmen/.netbeans/6.9" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="annotation.processing.enabled.in.editor" value="false" />
+    <property name="ant.core.lib" value="/users/tao/doghmen/netbeans-6.9.1/java/ant/lib/ant.jar" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="do.depend" value="false" />
+    <property name="file.separator" value="/" />
+    <property name="java.runtime.version" value="1.6.0_22-b04" />
+    <property name="sun.boot.class.path" value="/users/tao/doghmen/NetBeansProjects/JUnit-Sample/${endorsed.classpath}:/users/tao/doghmen/jdk1.6.0_22/jre/lib/resources.jar:/users/tao/doghmen/jdk1.6.0_22/jre/lib/rt.jar:/users/tao/doghmen/jdk1.6.0_22/jre/lib/sunrsasign.jar:/users/tao/doghmen/jdk1.6.0_22/jre/lib/jsse.jar:/users/tao/doghmen/jdk1.6.0_22/jre/lib/jce.jar:/users/tao/doghmen/jdk1.6.0_22/jre/lib/charsets.jar:/users/tao/doghmen/jdk1.6.0_22/jre/classes" />
+    <property name="debug.test.classpath" value=":build/classes:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/junit-3.8.2.jar:build/test/classes" />
+    <property name="libs.beans-binding.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/beansbinding-1.2.1.jar" />
+    <property name="have.tests" value="true" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.javac-api.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/javac-api-nb-7.0-b07.jar" />
+    <property name="user.country" value="FR" />
+    <property name="javadoc.notree" value="false" />
+    <property name="libs.spring-framework300.maven-pom" value="" />
+    <property name="libs.jaxws21.javadoc" value="/users/tao/doghmen/netbeans-6.9.1/java/docs/jaxws-api-doc.zip" />
+    <property name="default.javac.target" value="1.6" />
+    <property name="javac.classpath" value="" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="build.classes.dir" value="build/classes" />
+    <property name="libs.swing-layout.javadoc" value="/users/tao/doghmen/netbeans-6.9.1/platform/docs/swing-layout-1.0.4-doc.zip" />
+    <property name="libs.swing-layout.src" value="/users/tao/doghmen/netbeans-6.9.1/platform/docs/swing-layout-1.0.4-src.zip" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="javac.target" value="1.5" />
+    <property name="libs.eclipselink.classpath" value="/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/eclipselink/eclipselink-2.0.2.jar:/users/tao/doghmen/netbeans-6.9.1/java/modules/ext/eclipselink/eclipselink-javax.persistence-2.0.jar" />
+    <property name="runtime.encoding" value="UTF-8" />
+    <property name="libs.swing-app-framework.src" value="" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="sun.arch.data.model" value="32" />
+  </properties>
+  <testcase classname="sample.VectorsJUnit3Test" name="testEqual" time="0.0050" />
+  <testcase classname="sample.VectorsJUnit3Test" name="testScalarMultiplication" time="0.0010" />
+  <system-out><![CDATA[*VectorsJUnit3Test: testEqual()
+* VectorsJUnit3Test: testScalarMultiplication
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

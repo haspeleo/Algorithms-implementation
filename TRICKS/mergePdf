@@ -1,0 +1,16 @@
+#install first gs and pdftk: sudo apt-get install gs pdftk
+#whith gs
+gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf ....
+#of with pdftk
+pdftk in1.pdf in2.pdf cat output combined.pdf 
+
+to convert from epub to pdf
+http://epub2pdf.com/
+chmod +x ./epub2pdf.sh 
+./epub2pdf.sh <path-to-epub-file>
+
+#split pdf: use graphical tool pdfsam to split and merge
+
+#convert pdf to eps
+http://www.iml.ece.mcgill.ca/~stephan/ooeps
+pdftops -eps test.pdf

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/users/tao/doghmen/interviewing/makefile/C++_example/simpleExample_0_cmake/src/cpp_simple.C
+cstdlib
+-
+iostream
+-
+iomanip
+-
+cmath
+-
+cpp_simple.H
+/users/tao/doghmen/interviewing/makefile/C++_example/simpleExample_0_cmake/src/cpp_simple.H
+
+/users/tao/doghmen/interviewing/makefile/C++_example/simpleExample_0_cmake/src/cpp_simple.H
+
+/users/tao/doghmen/interviewing/makefile/C++_example/simpleExample_0_cmake/src/f.C
+cstdlib
+-
+iostream
+-
+cmath
+-
+
+/users/tao/doghmen/interviewing/makefile/C++_example/simpleExample_0_cmake/src/midpoint.C
+cstdlib
+-
+iostream
+-
+cmath
+-
+

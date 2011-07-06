@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<jnlp href="launch.jnlp" spec="1.0+">
+    <information>
+        <title>PHILOSOPHER</title>
+        <vendor>doghmen</vendor>
+        <homepage href=""/>
+        <description>PHILOSOPHER</description>
+        <description kind="short">PHILOSOPHER</description>
+    </information>
+<update check="always"/>
+    <resources>
+<j2se version="1.5+"/>
+<jar href="PHILOSOPHER.jar" main="true"/>
+    </resources>
+    <applet-desc height="300" main-class="concurrency.diners.Diners" name="PHILOSOPHER" width="300">
+    </applet-desc>
+</jnlp>

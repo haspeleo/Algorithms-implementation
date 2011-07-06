@@ -1,0 +1,5 @@
+graph Hello2 {
+
+Node2 [ label="Boxed Hello world ;)", color=Blue, fontcolor=Red, fontsize=24, shape=circle]
+
+}

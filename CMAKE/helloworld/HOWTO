@@ -1,0 +1,6 @@
+1) create a build directory named "build" for example (you name it as you want)
+
+2) enter build directory and issue : cmake ..
+3) your system is built under build directory
+4) run make under build directory 
+5) the binary is created under src/

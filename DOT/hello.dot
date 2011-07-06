@@ -1,0 +1,17 @@
+// Once GraphViz installed, write a dot file 
+// visualize it with GraphViz
+// Save this code in a file called hello.dot. You can then generate the graph and display it with a simple one-liner:
+// $ dot hello.dot -Tps | gv -
+// The -Tps option generates PostScript code, which is then piped to the ghostview utility.
+// If you're satisfied with the output, save it to a file:
+// $ dot hello.dot -Tps -o hello.ps
+
+//comment: hello world with dot 
+//graph with a single node Node1
+
+graph Hello {
+
+Node1 [label = "Hello World !"]
+
+}
+

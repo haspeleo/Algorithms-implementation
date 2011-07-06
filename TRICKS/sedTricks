@@ -1,0 +1,2 @@
+
+sed -i 's/ciel/terre/g' myfile : replace ciel with terre in myFile without openning myFile.

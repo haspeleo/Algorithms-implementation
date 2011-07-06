@@ -1,0 +1,11 @@
+
+#! /bin/sh 
+
+
+DOTFILE=$1
+
+dot -o $DOTFILE.pdf -Tpdf $DOTFILE.dot
+
+wait 
+
+evince $DOTFILE.pdf

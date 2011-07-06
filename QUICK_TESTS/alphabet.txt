@@ -1,0 +1,5 @@
+quest 
+- for -
+#freedom ;)
+!!!
+EOF;

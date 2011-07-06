@@ -1,0 +1,268 @@
+%\documentclass[landscape,a0b,final,a4resizeable]{a0poster}
+\documentclass[portrait,a0c,final]{a0poster}
+%\documentclass[portrait,a0b,final,a4resizeable]{a0poster}
+%\documentclass[portrait,a0b,final]{a0poster}
+%%% Option "a4resizeable" makes it possible ot resize the
+%   poster by the command: psresize -pa4 poster.ps poster-a4.ps
+%   For final printing, please remove option "a4resizeable" !!
+\usepackage{epsfig}
+\usepackage{multicol}
+\usepackage{pstricks,pst-grad}
+\usepackage{pstricks}
+\usepackage{pstricks-add}
+\usepackage{pst-math}
+%\usepackage{multido}
+%\usepackage{pdftricks}
+\usepackage{pst-node,pst-tree}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Definition of some variables and colors
+%\renewcommand{\rho}{\varrho}
+%\renewcommand{\phi}{\varphi}
+\setlength{\columnsep}{3cm}
+\setlength{\columnseprule}{0mm}
+\setlength{\parindent}{0.0cm}
+\newcommand{\tb}{\textbackslash}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%               Background                     %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\background}[3]{
+  \newrgbcolor{cgradbegin}{#1}
+  \newrgbcolor{cgradend}{#2}
+  \psframe[fillstyle=gradient,gradend=cgradend,
+  gradbegin=cgradbegin,gradmidpoint=#3](0.,0.)(1.\textwidth,-1.\textheight)
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                Poster                        %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{poster}{
+  \begin{center}
+  \begin{minipage}[c]{0.99\textwidth}
+}{
+  \end{minipage} 
+  \end{center}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                pcolumn                       %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{pcolumn}[1]{
+  \begin{minipage}{#1\textwidth}
+  \begin{center}
+}{
+  \end{center}
+  \end{minipage}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                pbox                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newrgbcolor{lcolor}{0. 0. 0.80}
+\newrgbcolor{gcolor1}{1. 1. 1.}
+\newrgbcolor{gcolor2}{.80 .80 1.}
+
+\newcommand{\pbox}[4]{
+\psshadowbox[#3]{
+\begin{minipage}[t][#2][t]{#1}
+#4
+\end{minipage}
+}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                myfig                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \myfig - replacement for \figure .Necessary, since in multicol-environment 
+% \figure won't work
+\newcommand{\myfig}[3][0]{
+\begin{center}
+  \vspace{1.5cm}
+  %\includegraphics[width=#3\hsize,angle=#1]{#2}
+  \nobreak\medskip
+\end{center}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                mycaption                     %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \mycaption - replacement for \caption
+% necessary, since in multicol-environment \figure and
+% therefore \caption won't work
+
+%\newcounter{figure}
+\setcounter{figure}{1}
+\newcommand{\mycaption}[1]{
+  \vspace{0.5cm}
+  \begin{quote}
+    {{\sc Figure} \arabic{figure}: #1}
+  \end{quote}
+  \vspace{1cm}
+  \stepcounter{figure}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Document
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\background{1. 1. 1.}{1. 1. 1.}{0.5}
+\vspace*{2cm}
+\newrgbcolor{lightblue}{0. 0. 0.80}
+\newrgbcolor{white}{1. 1. 1.}
+\newrgbcolor{whiteblue}{.80 .80 1.}
+%==================================================
+
+\begin{poster}
+
+%%% Header
+%%---------------------------------------------------------------------------------
+%\begin{center}
+%\begin{pcolumn}{{0.99}
+%\pbox{0.95\textwidth}{}{linewidth=1mm,framearc=0.3,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=whiteblue,gradmidpoint=1.0,framesep=1em}{
+%%%% Titel
+%  \begin{center}
+%    {\sc \Huge    Monte-Carlo Tree Search}\\[10mm]
+%    {\Large Olivier Teytaud, Hassen Doghmen\\[7.5mm]
+%    Tao, INRIA Saclay-IDF}
+%  \end{center}
+%}
+%\end{center}
+%\end{pcolumn}
+%%%%%%
+\begin{center}
+\begin{pcolumn}{0.99}
+\pbox{0.99\textwidth}{}{linewidth=1mm,framearc=0.3,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=whiteblue,gradmidpoint=1.0,framesep=1em}{
+
+\begin{center}
+  {\sc \Huge    Monte-Carlo Tree Search}\\[10mm]
+  {\Large Olivier Teytaud, Hassen Doghmen\\[7.5mm]
+  Tao, INRIA Saclay-IDF}
+\end{center}
+
+
+%ABSTRACT======
+%\Large
+%ABSTRACT HERE.................
+}
+\end{pcolumn}
+\end{center}
+
+%------------------------------------------
+%\vspace*{2cm} %space  for the abstract 
+
+%%%%%%%%%%%%%%%%%%%%%
+%%% Content
+%%%%%%%%%%%%%%%%%%%%%
+%%% Begin of Multicols-Enviroment
+
+\begin{multicols}{3}
+
+%\begin{center}
+\begin{pcolumn}{0.33} %{0.10}
+%\pbox{0.9\textwidth}{28cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+
+\includegraphics[width=30.0cm]{splitPdf/01_pdfsam_test.eps}
+%\scalebox{1}{\includegraphics*[1cm,1cm][28cm,28cm]{splitPdf/01_pdfsam_test.eps}}
+
+%}
+\end{pcolumn}
+%------------------------------------------------------------------------------------------
+%\vspace{.5cm}
+\begin{pcolumn}{0.33}
+
+%\pbox{0.9\textwidth}{28cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+%\scalebox{1}{\includegraphics*[28cm,1cm][28cm,28cm]{splitPdf/02_pdfsam_test.eps}}
+\includegraphics[width=30.0cm]{splitPdf/02_pdfsam_test.eps}
+
+%}
+\end{pcolumn}
+
+\begin{pcolumn}{0.33}
+%\pbox{0.9\textwidth}{28cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+\includegraphics[width=30.0cm]{splitPdf/03_pdfsam_test.eps}
+%\scalebox{1}{\includegraphics*[56cm,1cm][28cm,28cm]{splitPdf/03_pdfsam_test.eps}}
+
+%} 
+
+\end{pcolumn}
+ \end{multicols}
+%==================================================================
+%\vspace{.5cm}
+ \begin{multicols}{2}
+
+\begin{pcolumn}{0.5}
+ % \pbox{0.9\textwidth}{42cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+
+ \includegraphics[width=44.0cm]{splitPdf/05_pdfsam_test.eps}
+%\scalebox{1}{\includegraphics*[1cm,30cm][28cm,28cm]{splitPdf/05_pdfsam_test.eps}}
+  %  }
+  \end{pcolumn}
+
+%---------------------------------------------------------------------------------
+% M C T S
+%---------------------------------------------------------------------------------
+%\vspace{.5cm}
+
+\begin{pcolumn}{0.5}
+  %\pbox{0.9\textwidth}{42cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+
+\includegraphics[width=44.0cm]{splitPdf/04_pdfsam_test.eps}    
+%\scalebox{1}{\includegraphics*[1cm,60cm][28cm,28cm]{splitPdf/05_pdfsam_test.eps}}
+%}
+\end{pcolumn}
+
+ \end{multicols}
+%==================================================================
+%\vspace{.5cm}
+
+ \begin{multicols}{3}
+
+\begin{pcolumn}{0.33}
+  %\pbox{0.9\textwidth}{28cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+\includegraphics[width=30.0cm]{splitPdf/06_pdfsam_test.eps}
+%\scalebox{1}{\includegraphics*[30,56cm][28cm,28cm]{splitPdf/06_pdfsam_test.eps}}
+
+    %}
+\end{pcolumn}
+%---------------------------------------------------------------------------------
+%BANDIT - EXPLORATION / EXPLOITAION - MONTE CARLO SIMULATIONS 
+%---------------------------------------------------------------------------------
+%\vspace{.5cm}
+
+\begin{pcolumn}{0.33}
+  %\pbox{0.9\textwidth}{28cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+%\scalebox{1}{\includegraphics*[30cm,28cm][28cm,28cm]{splitPdf/07_pdfsam_test.eps}}
+\includegraphics[width=30.0cm]{splitPdf/07_pdfsam_test.eps}
+ 
+%}
+\end{pcolumn}
+%---------------------------------------------------------------------------------
+%\vspace{.5cm}
+
+  \begin{pcolumn}{0.33}
+  %\pbox{0.9\textwidth}{28cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+ 
+\includegraphics[width=30.0cm]{splitPdf/08_pdfsam_test.eps}
+%\scalebox{1}{\includegraphics*[1cm,30cm][28cm,28cm]{splitPdf/08_pdfsam_test.eps}}
+  %}
+\end{pcolumn}
+\end{multicols}
+
+%==================================================================
+% APPLICATIONS
+%==================================================================
+ \begin{multicols}{2}
+  \begin{pcolumn}{0.5}
+  %\pbox{0.9\textwidth}{42cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+ 
+%\scalebox{1}{\includegraphics*[42cm,1cm][28cm,28cm]{splitPdf/09_pdfsam_test.eps}}
+\includegraphics[width=42.0cm]{splitPdf/09_pdfsam_test.eps}
+  %}
+\end{pcolumn}
+%---------------------------------------------------------------------------------
+  \begin{pcolumn}{0.5}
+  %\pbox{0.9\textwidth}{42cm}{linewidth=1mm,framearc=0.1,linecolor=lightblue,fillstyle=gradient,gradangle=0,gradbegin=white,gradend=white,gradmidpoint=1.0,framesep=1em}{
+ 
+%\scalebox{1}{\includegraphics*[1cm,1cm][28cm,28cm]{splitPdf/10_pdfsam_test.eps}}
+\includegraphics[width=42.0cm]{splitPdf/10_pdfsam_test.eps}
+  %}
+\end{pcolumn}
+ \end{multicols}
+
+%====================================================
+\end{poster}
+\end{document}
+

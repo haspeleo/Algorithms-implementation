@@ -1,0 +1,35 @@
+==13379== Memcheck, a memory error detector.
+==13379== Copyright (C) 2002-2007, and GNU GPL'd, by Julian Seward et al.
+==13379== Using LibVEX rev 1804, a library for dynamic binary translation.
+==13379== Copyright (C) 2004-2007, and GNU GPL'd, by OpenWorks LLP.
+==13379== Using valgrind-3.3.0-Debian, a dynamic binary instrumentation framework.
+==13379== Copyright (C) 2000-2007, and GNU GPL'd, by Julian Seward et al.
+==13379== For more details, rerun with: -v
+==13379== 
+==13379== Invalid write of size 4
+==13379==    at 0x804838F: f (valgrindExample.c:19)
+==13379==    by 0x80483AC: main (valgrindExample.c:25)
+==13379==  Address 0x418f050 is 0 bytes after a block of size 40 alloc'd
+==13379==    at 0x4022AB8: malloc (vg_replace_malloc.c:207)
+==13379==    by 0x8048385: f (valgrindExample.c:18)
+==13379==    by 0x80483AC: main (valgrindExample.c:25)
+==13379== 
+==13379== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 11 from 1)
+==13379== malloc/free: in use at exit: 40 bytes in 1 blocks.
+==13379== malloc/free: 1 allocs, 0 frees, 40 bytes allocated.
+==13379== For counts of detected errors, rerun with: -v
+==13379== searching for pointers to 1 not-freed blocks.
+==13379== checked 60,332 bytes.
+==13379== 
+==13379== 
+==13379== 40 bytes in 1 blocks are definitely lost in loss record 1 of 1
+==13379==    at 0x4022AB8: malloc (vg_replace_malloc.c:207)
+==13379==    by 0x8048385: f (valgrindExample.c:18)
+==13379==    by 0x80483AC: main (valgrindExample.c:25)
+==13379== 
+==13379== LEAK SUMMARY:
+==13379==    definitely lost: 40 bytes in 1 blocks.
+==13379==      possibly lost: 0 bytes in 0 blocks.
+==13379==    still reachable: 0 bytes in 0 blocks.
+==13379==         suppressed: 0 bytes in 0 blocks.
+

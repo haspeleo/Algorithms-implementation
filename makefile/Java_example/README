@@ -1,0 +1,11 @@
+PNZ is a JAVA script which plays the PNZ game.
+
+The program picks a random 3 digit number, with all digits distinct. The player types a 3 digit guess, and the program prints a "P" for each digit that is in the correct location, an "N" for each digit that occurs in the answer, but in a different location, and a "Z" if no digit was correct.
+
+//===============================================
+for running the java applet you have to 
+write a simple pnz.html
+an specifies the .class here :    <applet code="PNZ.class" height=200 width=320> 
+
+
+http://www.cs.colostate.edu/helpdocs/JavaInDOS.html#APPLICATIONS

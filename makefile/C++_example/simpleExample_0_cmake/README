@@ -1,0 +1,17 @@
+this is the same example as simple_example_0 but 
+using cmake to generate automatically the makefile 
+and build the example
+
+put correctly the .C or .cpp in their locations ; don't bother with .h 
+they will be handled automatically
+
+
+see also:
+ http://people.sc.fsu.edu/~jburkardt/cpp_src/makefiles/makefiles.html
+
+ http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+ 
+ http://www.cs.umd.edu/class/fall2002/cmsc214/Tutorial/makefile.html
+
+
+
