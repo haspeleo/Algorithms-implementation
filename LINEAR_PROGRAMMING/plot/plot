@@ -1,0 +1,8 @@
+#! /bin/sh
+
+OUTFIG=solutionSpace.eps
+PLOTFILE=solutionSpace.p
+
+gnuplot < $PLOTFILE
+
+evince $OUTFIG &
