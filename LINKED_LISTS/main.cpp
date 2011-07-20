@@ -1,4 +1,5 @@
 /*
+ * http://www.dzinfo.net/vb/archive/index.php/t-1484.html --C++ books
  * http://www.bien-programmer.fr/codage.php#bibliotheque
  * http://depinfo.mines.inpl-nancy.fr/Members/thomas.darcet/ascenseur/projetascenseur
  * http://www.c-cplusplus.com/c-program-using-arrays-to-implement-working-of-lift-in-multi-story-buildings
