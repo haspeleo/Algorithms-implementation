@@ -1,21 +1,22 @@
-Problem:    giapetto
-Rows:       4
+Problem:    giapetto_with_data
+Rows:       5
 Columns:    2
-Non-zeros:  7
+Non-zeros:  8
 Status:     OPTIMAL
 Objective:  z = 180 (MAXimum)
 
    No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
      1 z            B            180                             
-     2 Finishing    NU           100                         100             1
-     3 Carpentry    NU            80                          80             1
-     4 Demand       B             20                          40 
+     2 Fin_hours    NU           100                         100             1
+     3 Carp_hours   NU            80                          80             1
+     4 Dem[soldier] B             20                          40 
+     5 Dem[train]   B             60                    6.02e+23 
 
    No. Column name  St   Activity     Lower bound   Upper bound    Marginal
 ------ ------------ -- ------------- ------------- ------------- -------------
-     1 x1           B             20             0               
-     2 x2           B             60             0               
+     1 x[soldier]   B             20             0               
+     2 x[train]     B             60             0               
 
 Karush-Kuhn-Tucker optimality conditions:
 

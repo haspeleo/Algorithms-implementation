@@ -2,6 +2,7 @@
 # Giapetto's problem
 #
 # This finds the optimal solution 
+# run with: glpsol -m giapetto_with_data.mod -o giapetto.sol
 #
 /* /////////////// Model Section ////////////////*/
 
