@@ -2,7 +2,7 @@
 # See Livre programmation linéaire christelle Guéret et al. page 131
 # 
 # 
-# exemple de lancement: glpsol -m modele.mod -o solution.sol
+# Launching : glpsol -m bicycleProductionPlanification.mod -o bicycleProductionPlanification.sol
 
 /* Decision variables */
 /* bicyvlettes à produire en heures normales pour le mois i */
