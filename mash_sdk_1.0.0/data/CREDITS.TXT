@@ -1,0 +1,15 @@
+The following images are part of the 'Columbia University Image Library'
+(aka COIL-100, at http://www.cs.columbia.edu/CAVE/software/softlib/coil-100.php):
+
+  - car.ppm
+  - cup.ppm
+  - duck.ppm
+
+
+
+The following images are part of the 'Caltech 256 Dataset'
+(http://www.vision.caltech.edu/Image_Datasets/Caltech256/):
+
+  - bear.jpg
+  - dolphin.jpg
+  - monkey.jpg
