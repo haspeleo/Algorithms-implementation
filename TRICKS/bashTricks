@@ -1,0 +1,10 @@
+xargs   vs.  exec {}
+
+time find . -name "*.jpg" -exec ls {} \;
+
+vs.
+
+time find . -name "*.jpg" -print 0 | xargs -0 ls
+
+
+big win for xargs ;-)

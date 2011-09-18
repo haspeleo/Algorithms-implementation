@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libKillerHeuristic.so -o ../bin/heuristics/hdoghmen/libKillerHeuristic.so CMakeFiles/heuristic-hdoghmen-KillerHeuristic.dir/hdoghmen/KillerHeuristic.cpp.o ../bin/libmash-core.so ../bin/libmash-utils.so ../lib/libfreeimage.a -ldl -Wl,-rpath,. 

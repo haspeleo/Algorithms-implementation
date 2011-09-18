@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libmash-core.so -o ../bin/libmash-core.so CMakeFiles/mash-core.dir/dynlibs_manager.cpp.o CMakeFiles/mash-core.dir/heuristics_manager.cpp.o CMakeFiles/mash-core.dir/image.cpp.o CMakeFiles/mash-core.dir/imageutils.cpp.o ../bin/libmash-utils.so ../lib/libfreeimage.a -ldl -Wl,-rpath,. 
