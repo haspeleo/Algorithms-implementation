@@ -11,6 +11,7 @@
  set yrange[1:1e+10]
  set log y 
  set sample 15
+
  plot stirling(x) title "stirling function"  with lines, \
  fact(x)          title "factorial"          with points, \
  exp(x)           title "exponential"        with lines, \

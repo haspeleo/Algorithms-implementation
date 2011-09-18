@@ -1,5 +1,8 @@
 #! /bin/sh
 
+# to plot results in .p file 
+
+
 OUTFIG=solutionSpace.eps
 PLOTFILE=solutionSpace.p
 
