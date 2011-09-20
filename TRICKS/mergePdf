@@ -14,3 +14,8 @@ chmod +x ./epub2pdf.sh
 #convert pdf to eps
 http://www.iml.ece.mcgill.ca/~stephan/ooeps
 pdftops -eps test.pdf
+
+#How to convert jpg files to one PDF?
+
+sudo apt-get install imagemagick
+convert *.jpg foo.pdf
