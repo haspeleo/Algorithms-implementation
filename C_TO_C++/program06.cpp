@@ -21,7 +21,7 @@ int main () {
     // error: name lookup of ‘i’ changed for ISO ‘for’ scoping
     // (if you use ‘-fpermissive’ G++ will accept your code)
     
-    cout <<"Inially i was : "<< i <<endl;
+    cout <<"Initially i was : "<< i <<endl;
     
     return 0;
 }
