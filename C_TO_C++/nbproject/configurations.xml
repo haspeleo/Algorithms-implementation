@@ -20,6 +20,9 @@
       <itemPath>program06.cpp</itemPath>
       <itemPath>program07.cpp</itemPath>
       <itemPath>program08.cpp</itemPath>
+      <itemPath>program09.cpp</itemPath>
+      <itemPath>program10.cpp</itemPath>
+      <itemPath>program11.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -55,6 +58,12 @@
       <item path="program06.cpp" ex="true" tool="1" flavor="0">
       </item>
       <item path="program07.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program08.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program09.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program10.cpp" ex="true" tool="1" flavor="0">
       </item>
     </conf>
     <conf name="Release" type="1">

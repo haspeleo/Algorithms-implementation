@@ -7,6 +7,19 @@ using namespace std;
 
 #include <iostream>
 
+
+double *silly_function() {
+    
+    static double r = 342;
+    return &r;
+    
+}
+
+double *biggest (double *r, double *s) {
+    
+    return ( *r > *s ? r : s);
+}
+
 double &biggest (double &r, double &s) {
     
     return (r > s ? r : s);
@@ -49,6 +62,7 @@ int main () {
     cout <<"[" << k <<","<< m << "]"<<endl;
     
     cout <<"*** Translation from C++ to C "<<endl;
+ 
     
     k = 3;
     m = 4; 
@@ -77,5 +91,38 @@ int main () {
     // A translation from C++ to C will be: 
     // double *biggest (double *r, double *s)
     // the call will be: (*(biggest(&k, &m))) = 10;
+    
+    k = 3;
+    m = 4;
+    
+    cout <<" initially [k, m ] = [" << k <<","<< m << "]"<<endl;
+    
+    (*(biggest (&k, &m))) = 10;
+    cout <<"Compare and affect -- C manner: "<<endl;
+    
+    cout <<"[" << k <<","<< m << "]"<<endl;
+    
+    cout <<"Compare and increment -- C manner "<<endl;
+    ((*(biggest (&k, &m)))) ++; 
+    cout <<"[" << k <<","<< m << "]"<<endl;
+    
+    
+    
+    cout <<"The silly function: "<<endl; 
+    
+    double *c = NULL;
+   
+    c = silly_function();
+    double &d = *c; // Now b is the double which a points!
+    
+    d += 1;
+    d = d * d;
+    d +=4;
+    
+    cout <<"Silly result: " << a <<endl;
+    cout <<"Contents of *a, b and r = "<< d <<endl;
+    
+    
+    
     return 0;
 }

@@ -34,10 +34,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/program11.o \
 	${OBJECTDIR}/program02.o \
 	${OBJECTDIR}/program08.o \
 	${OBJECTDIR}/program07.o \
+	${OBJECTDIR}/program09.o \
 	${OBJECTDIR}/program03.o \
+	${OBJECTDIR}/program10.o \
 	${OBJECTDIR}/program01.o \
 	${OBJECTDIR}/program04.o \
 	${OBJECTDIR}/program05.o \
@@ -68,6 +71,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__ ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
+${OBJECTDIR}/program11.o: program11.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program11.o program11.cpp
+
 ${OBJECTDIR}/program02.o: program02.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -83,10 +91,20 @@ ${OBJECTDIR}/program07.o: program07.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program07.o program07.cpp
 
+${OBJECTDIR}/program09.o: program09.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program09.o program09.cpp
+
 ${OBJECTDIR}/program03.o: program03.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program03.o program03.cpp
+
+${OBJECTDIR}/program10.o: program10.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program10.o program10.cpp
 
 ${OBJECTDIR}/program01.o: program01.cpp 
 	${MKDIR} -p ${OBJECTDIR}
