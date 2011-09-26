@@ -231,6 +231,19 @@ heuristic-hdoghmen-IdentityHeuristic/fast:
 .PHONY : heuristic-hdoghmen-IdentityHeuristic/fast
 
 #=============================================================================
+# Target rules for targets named heuristic-hdoghmen-meanthresholdheuristic
+
+# Build rule for target.
+heuristic-hdoghmen-meanthresholdheuristic: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 heuristic-hdoghmen-meanthresholdheuristic
+.PHONY : heuristic-hdoghmen-meanthresholdheuristic
+
+# fast build rule for target.
+heuristic-hdoghmen-meanthresholdheuristic/fast:
+	$(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build
+.PHONY : heuristic-hdoghmen-meanthresholdheuristic/fast
+
+#=============================================================================
 # Target rules for targets named heuristics
 
 # Build rule for target.
@@ -262,6 +275,7 @@ help:
 	@echo "... heuristic-examples-identity"
 	@echo "... heuristic-examples-mean_threshold"
 	@echo "... heuristic-hdoghmen-IdentityHeuristic"
+	@echo "... heuristic-hdoghmen-meanthresholdheuristic"
 	@echo "... heuristics"
 .PHONY : help
 

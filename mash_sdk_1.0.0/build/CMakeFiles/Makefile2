@@ -136,8 +136,8 @@ mash/preinstall:
 # Target rules for target mash/CMakeFiles/mash-core.dir
 
 # All Build rule for target.
-mash/CMakeFiles/mash-core.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 mash/CMakeFiles/mash-core.dir/all: dependencies/FreeImage/CMakeFiles/freeimage.dir/all
+mash/CMakeFiles/mash-core.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 	$(MAKE) -f mash/CMakeFiles/mash-core.dir/build.make mash/CMakeFiles/mash-core.dir/depend
 	$(MAKE) -f mash/CMakeFiles/mash-core.dir/build.make mash/CMakeFiles/mash-core.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles  97
@@ -237,8 +237,8 @@ sdk/preinstall:
 # Target rules for target sdk/CMakeFiles/testheuristic.dir
 
 # All Build rule for target.
-sdk/CMakeFiles/testheuristic.dir/all: dependencies/FreeImage/CMakeFiles/freeimage.dir/all
 sdk/CMakeFiles/testheuristic.dir/all: mash/CMakeFiles/mash-core.dir/all
+sdk/CMakeFiles/testheuristic.dir/all: dependencies/FreeImage/CMakeFiles/freeimage.dir/all
 sdk/CMakeFiles/testheuristic.dir/all: heuristics/CMakeFiles/heuristics.dir/all
 	$(MAKE) -f sdk/CMakeFiles/testheuristic.dir/build.make sdk/CMakeFiles/testheuristic.dir/depend
 	$(MAKE) -f sdk/CMakeFiles/testheuristic.dir/build.make sdk/CMakeFiles/testheuristic.dir/build
@@ -277,6 +277,7 @@ clean: sdk/CMakeFiles/testheuristic.dir/clean
 heuristics/all: heuristics/CMakeFiles/heuristic-examples-identity.dir/all
 heuristics/all: heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all
 heuristics/all: heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/all
+heuristics/all: heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/all
 heuristics/all: heuristics/CMakeFiles/heuristics.dir/all
 .PHONY : heuristics/all
 
@@ -284,6 +285,7 @@ heuristics/all: heuristics/CMakeFiles/heuristics.dir/all
 heuristics/clean: heuristics/CMakeFiles/heuristic-examples-identity.dir/clean
 heuristics/clean: heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/clean
 heuristics/clean: heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/clean
+heuristics/clean: heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/clean
 heuristics/clean: heuristics/CMakeFiles/heuristics.dir/clean
 .PHONY : heuristics/clean
 
@@ -295,11 +297,11 @@ heuristics/preinstall:
 # Target rules for target heuristics/CMakeFiles/heuristic-examples-identity.dir
 
 # All Build rule for target.
-heuristics/CMakeFiles/heuristic-examples-identity.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 heuristics/CMakeFiles/heuristic-examples-identity.dir/all: mash/CMakeFiles/mash-core.dir/all
+heuristics/CMakeFiles/heuristic-examples-identity.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 	$(MAKE) -f heuristics/CMakeFiles/heuristic-examples-identity.dir/build.make heuristics/CMakeFiles/heuristic-examples-identity.dir/depend
 	$(MAKE) -f heuristics/CMakeFiles/heuristic-examples-identity.dir/build.make heuristics/CMakeFiles/heuristic-examples-identity.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles  99
+	$(CMAKE_COMMAND) -E cmake_progress_report /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 
 	@echo "Built target heuristic-examples-identity"
 .PHONY : heuristics/CMakeFiles/heuristic-examples-identity.dir/all
 
@@ -309,7 +311,7 @@ all: heuristics/CMakeFiles/heuristic-examples-identity.dir/all
 
 # Build rule for subdir invocation for target.
 heuristics/CMakeFiles/heuristic-examples-identity.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 99
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 98
 	$(MAKE) -f CMakeFiles/Makefile2 heuristics/CMakeFiles/heuristic-examples-identity.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 0
 .PHONY : heuristics/CMakeFiles/heuristic-examples-identity.dir/rule
@@ -331,11 +333,11 @@ clean: heuristics/CMakeFiles/heuristic-examples-identity.dir/clean
 # Target rules for target heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir
 
 # All Build rule for target.
-heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all: mash/CMakeFiles/mash-core.dir/all
+heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 	$(MAKE) -f heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/build.make heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/depend
 	$(MAKE) -f heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/build.make heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 
+	$(CMAKE_COMMAND) -E cmake_progress_report /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles  99
 	@echo "Built target heuristic-examples-mean_threshold"
 .PHONY : heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all
 
@@ -345,7 +347,7 @@ all: heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all
 
 # Build rule for subdir invocation for target.
 heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 98
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 99
 	$(MAKE) -f CMakeFiles/Makefile2 heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 0
 .PHONY : heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/rule
@@ -367,8 +369,8 @@ clean: heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/clean
 # Target rules for target heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir
 
 # All Build rule for target.
-heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/all: mash/CMakeFiles/mash-core.dir/all
+heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
 	$(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/depend
 	$(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 
@@ -400,11 +402,48 @@ clean: heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir
+
+# All Build rule for target.
+heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/all: mash/CMakeFiles/mash-core.dir/all
+heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/all: mash-utils/CMakeFiles/mash-utils.dir/all
+	$(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/depend
+	$(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 
+	@echo "Built target heuristic-hdoghmen-meanthresholdheuristic"
+.PHONY : heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/all
+
+# Include target in all.
+all: heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 98
+	$(MAKE) -f CMakeFiles/Makefile2 heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build/CMakeFiles 0
+.PHONY : heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/rule
+
+# Convenience name for target.
+heuristic-hdoghmen-meanthresholdheuristic: heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/rule
+.PHONY : heuristic-hdoghmen-meanthresholdheuristic
+
+# clean rule for target.
+heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/clean:
+	$(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/clean
+.PHONY : heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/clean
+
+# clean rule for target.
+clean: heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target heuristics/CMakeFiles/heuristics.dir
 
 # All Build rule for target.
 heuristics/CMakeFiles/heuristics.dir/all: heuristics/CMakeFiles/heuristic-examples-mean_threshold.dir/all
 heuristics/CMakeFiles/heuristics.dir/all: heuristics/CMakeFiles/heuristic-examples-identity.dir/all
+heuristics/CMakeFiles/heuristics.dir/all: heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/all
 heuristics/CMakeFiles/heuristics.dir/all: heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/all
 	$(MAKE) -f heuristics/CMakeFiles/heuristics.dir/build.make heuristics/CMakeFiles/heuristics.dir/depend
 	$(MAKE) -f heuristics/CMakeFiles/heuristics.dir/build.make heuristics/CMakeFiles/heuristics.dir/build

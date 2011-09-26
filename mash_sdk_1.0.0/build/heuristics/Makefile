@@ -182,6 +182,20 @@ heuristic-hdoghmen-IdentityHeuristic/fast:
 .PHONY : heuristic-hdoghmen-IdentityHeuristic/fast
 
 # Convenience name for target.
+heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/rule:
+	cd /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build && $(MAKE) -f CMakeFiles/Makefile2 heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/rule
+.PHONY : heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/rule
+
+# Convenience name for target.
+heuristic-hdoghmen-meanthresholdheuristic: heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/rule
+.PHONY : heuristic-hdoghmen-meanthresholdheuristic
+
+# fast build rule for target.
+heuristic-hdoghmen-meanthresholdheuristic/fast:
+	cd /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build && $(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build
+.PHONY : heuristic-hdoghmen-meanthresholdheuristic/fast
+
+# Convenience name for target.
 heuristics/CMakeFiles/heuristics.dir/rule:
 	cd /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build && $(MAKE) -f CMakeFiles/Makefile2 heuristics/CMakeFiles/heuristics.dir/rule
 .PHONY : heuristics/CMakeFiles/heuristics.dir/rule
@@ -267,6 +281,30 @@ hdoghmen/IdentityHeuristic.cpp.s:
 	cd /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build && $(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-IdentityHeuristic.dir/hdoghmen/IdentityHeuristic.cpp.s
 .PHONY : hdoghmen/IdentityHeuristic.cpp.s
 
+hdoghmen/meanthresholdheuristic.o: hdoghmen/meanthresholdheuristic.cpp.o
+.PHONY : hdoghmen/meanthresholdheuristic.o
+
+# target to build an object file
+hdoghmen/meanthresholdheuristic.cpp.o:
+	cd /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build && $(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/hdoghmen/meanthresholdheuristic.cpp.o
+.PHONY : hdoghmen/meanthresholdheuristic.cpp.o
+
+hdoghmen/meanthresholdheuristic.i: hdoghmen/meanthresholdheuristic.cpp.i
+.PHONY : hdoghmen/meanthresholdheuristic.i
+
+# target to preprocess a source file
+hdoghmen/meanthresholdheuristic.cpp.i:
+	cd /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build && $(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/hdoghmen/meanthresholdheuristic.cpp.i
+.PHONY : hdoghmen/meanthresholdheuristic.cpp.i
+
+hdoghmen/meanthresholdheuristic.s: hdoghmen/meanthresholdheuristic.cpp.s
+.PHONY : hdoghmen/meanthresholdheuristic.s
+
+# target to generate assembly for a file
+hdoghmen/meanthresholdheuristic.cpp.s:
+	cd /users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/build && $(MAKE) -f heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/build.make heuristics/CMakeFiles/heuristic-hdoghmen-meanthresholdheuristic.dir/hdoghmen/meanthresholdheuristic.cpp.s
+.PHONY : hdoghmen/meanthresholdheuristic.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -277,6 +315,7 @@ help:
 	@echo "... heuristic-examples-identity"
 	@echo "... heuristic-examples-mean_threshold"
 	@echo "... heuristic-hdoghmen-IdentityHeuristic"
+	@echo "... heuristic-hdoghmen-meanthresholdheuristic"
 	@echo "... heuristics"
 	@echo "... install"
 	@echo "... install/local"
@@ -292,6 +331,9 @@ help:
 	@echo "... hdoghmen/IdentityHeuristic.o"
 	@echo "... hdoghmen/IdentityHeuristic.i"
 	@echo "... hdoghmen/IdentityHeuristic.s"
+	@echo "... hdoghmen/meanthresholdheuristic.o"
+	@echo "... hdoghmen/meanthresholdheuristic.i"
+	@echo "... hdoghmen/meanthresholdheuristic.s"
 .PHONY : help
 
 

@@ -11,4 +11,5 @@
 
 + examples/identity
 + examples/mean_threshold
++ hdoghmen/meanthresholdheuristic
 + hdoghmen/IdentityHeuristic

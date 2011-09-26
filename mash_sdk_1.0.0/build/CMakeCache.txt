@@ -167,7 +167,7 @@ heuristic-examples-mean_threshold_LIB_DEPENDS:STATIC=general;mash-core;general;m
 heuristic-hdoghmen-IdentityHeuristic_LIB_DEPENDS:STATIC=general;mash-core;general;mash-utils;
 
 //Dependencies for the target
-heuristic-hdoghmen-KillerHeuristic_LIB_DEPENDS:STATIC=general;mash-core;general;mash-utils;
+heuristic-hdoghmen-meanthresholdheuristic_LIB_DEPENDS:STATIC=general;mash-core;general;mash-utils;
 
 //Dependencies for the target
 mash-core_LIB_DEPENDS:STATIC=general;mash-utils;general;freeimage;general;dl;
@@ -299,9 +299,9 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_USE_RELATIVE_PATHS-ADVANCED:INTERNAL=1
 //Advanced flag for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
-DETECTED_HEURISTICS:INTERNAL=examples/identity;examples/mean_threshold;hdoghmen/IdentityHeuristic
+DETECTED_HEURISTICS:INTERNAL=examples/identity;examples/mean_threshold;hdoghmen/meanthresholdheuristic;hdoghmen/IdentityHeuristic
 DISABLED_HEURISTICS:INTERNAL=
-ENABLED_HEURISTICS:INTERNAL=examples/identity;examples/mean_threshold;hdoghmen/KillerHeuristic
+ENABLED_HEURISTICS:INTERNAL=
 IS_NEW:INTERNAL=TRUE
 SOURCE_FILES:INTERNAL=/users/tao/doghmen/Algorithms-implementation/mash_sdk_1.0.0/heuristics/hdoghmen/IdentityHeuristic.cpp
 TO_COMPILE:INTERNAL=TRUE
