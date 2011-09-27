@@ -1,0 +1,121 @@
+﻿Hassen DOGHMEN
+9 rue Eugène Crétel
+91300 Massy, France
+
+06.35.50.20.35
+hassen.doghmen@gmail.com
+www.lri.fr/~doghmen
+Ingénieur Expert en Optimisation
+
+Expérience Professionnelle_________________________________________________________
+
+Depuis Sept. 2011
+Ingénieur Expert à INRIA Saclay-IDF, Équipe TAO (Apprentissage et Optimisation)
+Développement collaboratif au sein du Projet Mash (http://mash-project.eu/).
+Expérimentations des heuristiques/planificateurs implémentés:
+- En mode simulation: Environnement graphique 3D.
+- Application réelle: Bras robot: tâches de planification, détection d'objets, classification.
+
+2011 -  2009
+
+Ingénieur en optimisation à INRIA Saclay-IDF, Équipe TAO (Apprentissage et Optimisation)
+Recherches sur la classe d'algorithmes Monte Carlo Tree Search 
+Expérimentations et tests:
+- Expérimentations sur la parallélisation de l'algorithme Monte-Carlo Tree Search.
+- Tuning des paramètres du programme joueur de Go MoGo.
+- Planification grande dimension avec application à l'énergie: Gestion de production électrique.
+Développements:
+- Co-évolution sur grilles et construction automatique des livres d'ouvertures pour le jeu de Go.
+Maintenance:
+- Tests de non régression, patches et correction de bugs.
+
+2010 - 1 mois
+Chercheur invité, National University of Tainan, Taiwan: 
+- Intégration de connaissances expertes dans le jeu de Go. 
+- Installation d'un Mini-cluster pour expérimentions MPI.
+
+2009 - 6 mois
+Thèse de Master, Laboratoire d'informatique de Paris 6, Équipe Systèmes sur puce, Paris - France
+Titre: Raffinement d'abstraction de composants matériels pour la vérification par model checking.
+Thèmes: vérification formelle, model-checking, SAT solving, logique temporelle.
+
+2008 - 6 mois
+Thèse de maîtrise, Centre d'enseignement à distance, Faculté des sciences de Bizerte - Tunisie
+Titre: Système de gestion de e-learning : approche basée sur les metadonnées formelles pour  
+l'aide à l'apprentissage en ligne. Module intégré dans la plateforme Moodle. 
+Thèmes: intelligence artificielle , apprentissage, metadonnées, web sémantique.
+ 
+Études____________________________________________________________________
+                                                                                    
+2009                                                        
+Master de recherche : Modèles, Optimisation, Programmation et Services. 
+Université d’Evry-Val-d’Essonne, France.     
+Majeurs: Optimisation, Apprentissage automatique, Recherche opérationnelle.
+Mineurs: systèmes distribués, programmation linéaire.
+
+2008
+Maîtrise en Sciences Informatiques : Génie Logiciel et Programmation. 
+Université de Carthage, Tunisie.  
+Avec mention bien (3ème/64).
+Majeurs: Ateliers de génie logiciel. Mineurs: Architecture des systèmes d'exploitation.
+
+2004
+DEUPC en Mathématiques et Sciences Informatiques.
+Université de Carthage, Tunisie.  
+Majeurs: Sciences informatiques, Mathématiques. Mineurs: Physiques, Statistiques.
+
+Compétences Spécifiques_______________________________________________________
+
+        Programmation: C/C++(Expert), J2EE(Familier), Cuda(base).
+		API: JNI, SWING. 
+		IDE: Vim, Eclipse, NetBeans.
+		Debugging: DDD.    
+		Gestionnaires de Versions: CVS, SVN, GIT.    
+		Scripts: Shell, Sed, Awk, Octave.
+		Gestion de bases de données: Oracle, PL/SQL, MySQL.
+		Systèmes d'exploitation: MS Windows, Linux, MacOS.
+Formations____________________________________________________________________
+
+		Avril 2011: École de printemps GRID'5000 (5 jours)
+	          - Clouds computing et déploiement d'environnements virtualisés.
+		Avril 2011: Formation intensive à INRIA-Saclay (3 jours)
+	              - Programmation GPGPU.
+		Janvier 2011: Formation intensive à INRIA-Rocquencourt (3 jours) 
+	             - Programmation parallèle avec MPI.
+	             - Programmation GPU avec Cuda.
+		Avril 2010: École de printemps GRID'5000 (5 jours)
+
+Réalisations____________________________________________________________________
+
+2010
+MoGoDroid: Application de Go pour la plateforme Android. Moteur en C++, Interface 
+utilisateur en Java et la communication utilisant  JNI (en cours).
+
+2011 - 2009
+MoGo: Plusieurs records pour le programme joueur de Go MoGo. 
+ - Juin 2011 : Vainqueur des compétitions en 7x7 Go, IEEE-FUZZ, Taiwan.
+ - Avril 2011: Première victoire en 13x13 avec handicap 2.5, SSCI, France.
+ - Novembre 2010 : MoGo Champion du tournoi TAAI 2010.
+ - Juillet 2010 : Première victoire en H2 contre 6Dan en 13x13, WCCI, Espagne.
+ - Mars 2010 : Certification 3Dan pour MoGoTW,  Taiwan.
+
+2011 - 2009
+Sélection de travaux de recherche:
+- Continious Rapid Action Value Estimation, ACML 2011.
+- Adding Double Progressive Widening to Upper Confidence Tree to Cope with 
+  Uncertainty in Planning Problems, EWRL, 2011.   
+- Consistency Modifications for Automatically Tuned Monte-Carlo Tree Search, 
+  LION, 2010.
+- Scalability and Parallelization of Monte-Carlo Tree Search, ICCG 2010.
+
+Langages et Intérêts__________________________________________________________________	
+		Langages
+		Français(courant), Anglais(TOEIC).
+
+		Intérêts
+		Développement libre (https://github.com/haspeleo), planche à voile et lecture.
+		Membre fondateur et conseiller technique dans le club de spéléologie de Bizerte 		        		
+        (http://www.speleobizerte.creajn.com).
+		Diplôme en premiers secours et volontaire pour les compagnes de prévention routière.
+
+Références disponibles sur demande
