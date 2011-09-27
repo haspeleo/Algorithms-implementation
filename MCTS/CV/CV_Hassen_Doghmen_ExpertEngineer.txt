@@ -5,11 +5,15 @@
 06.35.50.20.35
 hassen.doghmen@gmail.com
 www.lri.fr/~doghmen
-Ingénieur Expert en Optimisation
+
+                        
+                        Ingénieur Expert en Optimisation
+
 
 Expérience Professionnelle_________________________________________________________
 
 Depuis Sept. 2011
+
 Ingénieur Expert à INRIA Saclay-IDF, Équipe TAO (Apprentissage et Optimisation)
 Développement collaboratif au sein du Projet Mash (http://mash-project.eu/).
 Expérimentations des heuristiques/planificateurs implémentés:
@@ -74,6 +78,7 @@ Compétences Spécifiques_______________________________________________________
 		Scripts: Shell, Sed, Awk, Octave.
 		Gestion de bases de données: Oracle, PL/SQL, MySQL.
 		Systèmes d'exploitation: MS Windows, Linux, MacOS.
+
 Formations____________________________________________________________________
 
 		Avril 2011: École de printemps GRID'5000 (5 jours)
@@ -109,6 +114,7 @@ Sélection de travaux de recherche:
 - Scalability and Parallelization of Monte-Carlo Tree Search, ICCG 2010.
 
 Langages et Intérêts__________________________________________________________________	
+
 		Langages
 		Français(courant), Anglais(TOEIC).
 
