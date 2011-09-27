@@ -19,3 +19,6 @@ pdftops -eps test.pdf
 
 sudo apt-get install imagemagick
 convert *.jpg foo.pdf
+
+#to get a smaller PDF from a PS
+ps2pdf file.ps
