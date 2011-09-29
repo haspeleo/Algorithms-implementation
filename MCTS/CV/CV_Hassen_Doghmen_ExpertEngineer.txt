@@ -70,7 +70,7 @@ Majeurs: Sciences informatiques, Mathématiques. Mineurs: Physiques, Statistique
 
 Compétences Spécifiques_______________________________________________________
 
-        Programmation: C/C++(Expert), J2EE(Familier), Cuda(base).
+       		Programmation: C/C++(Expert), J2EE(Familier), Cuda(base).
 		API: JNI, SWING. 
 		IDE: Vim, Eclipse, NetBeans.
 		Debugging: DDD.    
