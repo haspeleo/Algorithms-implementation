@@ -23,6 +23,18 @@
       <itemPath>program09.cpp</itemPath>
       <itemPath>program10.cpp</itemPath>
       <itemPath>program11.cpp</itemPath>
+      <itemPath>program12.cpp</itemPath>
+      <itemPath>program13.cpp</itemPath>
+      <itemPath>program14.cpp</itemPath>
+      <itemPath>program15.cpp</itemPath>
+      <itemPath>program15bis.cpp</itemPath>
+      <itemPath>program16.cpp</itemPath>
+      <itemPath>program17.cpp</itemPath>
+      <itemPath>program17bis.cpp</itemPath>
+      <itemPath>program18.cpp</itemPath>
+      <itemPath>program18bis.cpp</itemPath>
+      <itemPath>program18ter.cpp</itemPath>
+      <itemPath>program19.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -64,6 +76,32 @@
       <item path="program09.cpp" ex="true" tool="1" flavor="0">
       </item>
       <item path="program10.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program11.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program12.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program13.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program14.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program15.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program15bis.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program16.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program17.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program17bis.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program18.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program18bis.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program18ter.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program19.cpp" ex="true" tool="1" flavor="0">
       </item>
     </conf>
     <conf name="Release" type="1">
