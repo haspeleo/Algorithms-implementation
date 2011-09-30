@@ -1,0 +1,92 @@
+#================================
+Projet Mash:
+#================================
+
+Cadre et contexte du projet:
+The MASH project investigates the design of complex learning systems to increase the performance of artificial intelligence. To create such systems, we want to involve large groups of contributors from as many fields and backgrounds as possible, to program large and heterogeneous families of feature extraction modules.
+
+Performance will be measured on action selection with a robotic arm and in a simulated 3d environment, and object detection.
+
+Objectives
+
+The goal of the MASH project is to create new tools for the collaborative development of large families of feature extractors. It aims at starting a new generation of learning software with great prior model complexity.
+
+The project is structured around this web platform. It comprises collaborative tools, such as a wiki-based documentation and a forum, and an experiment center to run and analyze experiments continuously.
+
+The applications targeted by the project are classical vision problems, and goal-planning in a 3D video game and with a real robotic arm.
+
+The scientific issues to be tackled along the course of the project are numerous, from standard machine learning questions such as learning and prediction with very large feature spaces and tight computational constraints, to original problems related to clustering in a functional space.
+
+
+#================================
+Projet MCTS
+#================================
+C'est quoi:
+Fouille d'arbre par Monte-Carlo: Algorithme de prise de décision dans l'incertain sur un (algorithme apparu en 2006)
+Recherche guidée par un compromis entre exploration/exploitation
+
+Avantages: 
+Anytime: selon le budget en temps qu'on dispose, on peut arrêter la méthode quand on veut avec une garantie
+de solution relativement optimale.
+Peut faire façe à une forte explosition combinatoire 
+
+Avantages: forte combinatoire , abscence de fonction d'évaluation, passage à l'échelle
+
+Applications: jeu de Go (benchmark classique), gestion de la production éléctrique,
+compagne publicitaire, gestion de portefeuille financier, optimisation des crash-tests dans le domaine automobile. 
+
+Réalisations: Plusieurs records pour MoGo, valorisation de la méthode auprès des industriels, participation 
+à des évenements grand public (workshops, AFIA, ROADEF, sciences en fêtes).
+
+
+
+Volet 2:
+voir MCTS appliqué à la gestion de stocks
+L'état de l'art des politiques pour la planification de la gestion de la production de l'énergie, ne fait que approximer le problème (programmation linéaire sur un ensemble fini de scénarios, programmmation dynamique sur le même problème mais approché).
+MCTS (Monte-Carlo Tree Search) apparait comme un bon candidat pour converger à une solution exacte à ces problèmes.
+Application à la gestion de production éléctrique: barrages d'eau.
+
+Résultat: Publication de 2 articles décrivant la technique utilisée et sa performance.
+
+#================================
+Mission à Taiwan
+#================================
+Il s'agit d'essayer d'extraire les règles auprès des experts (profesionnnels de Go Taiwannais).
+Dans une seconde étape, construire une base de règles pour les ouvertures dans le cadre du jeu de Go (initialisation de l'algorithme).
+Enfin, tester l'implémentation (plan d'expériences sur grille de calcul) et la valider auprès du client final (ici profesionnel de Go).
+
+#================================
+Thèse de Master 
+#================================
+
+
+Raffinement d'abstraction de composants matériels pour la vérification par model checking.
+vérification formelle, modelchecking,
+SAT solving, logique temporelle
+
+#================================
+Thèse de Maîtrise
+#================================
+Système de gestion de elearning
+: approche basée sur les metadonnées formelles pour
+l'aide à l'apprentissage en ligne. Module intégré dans la plateforme Moodle.
+Thèmes: intelligence artificielle , apprentissage, metadonnées, web sémantique.
+
+#================================
+Assistant stagiaire - Société Tunisienne des Industries de Raffinage 
+#================================
+
+Ma tâche est de concevoir et implémenter une application de gestion du centre de formation (inscription des stagiaires, disponibilité des formateurs, organiser des expositions d'appareillage...).
+
+Application développée sous Oracle qui a permis une rapidité de réponse pour les stagiaires, une organisation robuste,
+et le bon déroulement de la formation. 
+
+#================================
+Formateur informatique - intiation au Langage C
+#================================
+Cours d'initiation à la programmation en language C.
+
+
+
+
+
