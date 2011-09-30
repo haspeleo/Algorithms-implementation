@@ -1,3 +1,24 @@
+#-----------------------------------------------------------------------------------------------------------------
+Réalisation des tests de Non regression.
+Stabilisation de la version parallèle du logiciel MoGo (tests réalisé dans le cadre MPI avec ompi).
+Développements (C/C++)
+Tests automatiés(scripts shell et sur grille de calcul) et validations(statistique).
+
+Migration 'urgente' du dépôt de sources de CVS vers SVN (crash du CVS).
+
+Mission à TAIWAN:
+Installation d'un mini-cluster(3x8-coeurs) pour partenaires Taiwannais dans le projet.
+
+Ajout des conaissances expertes dans le logiciel MoGo.
+
+Gestion d'une compétition (MoGo a gagné 23/24 parties jouées).
+
+Préparation d'une version parallélisée pour le congrès de Barcelone, SPAIN(nouveau record pour le Go 13x13).
+#-----------------------------------------------------------------------------------------------------------------
+
+
+
+
 #================================
 Projet Mash:
 #================================
