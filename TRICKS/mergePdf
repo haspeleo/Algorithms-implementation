@@ -1,6 +1,6 @@
 #install first gs and pdftk: sudo apt-get install gs pdftk
 #whith gs
-gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=out.pdf in1.pdf in2.pdf ....
+gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=out.pdf *.pdf
 #of with pdftk
 pdftk in1.pdf in2.pdf cat output combined.pdf 
 
