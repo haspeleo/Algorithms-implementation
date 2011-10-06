@@ -1,0 +1,35 @@
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   1
+
+Problem:    example2_max
+Objective:  z = 18.8 (MAXimum)
+
+   No. Row name     St      Activity         Slack   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 z            BS      18.80000     -18.80000          -Inf      -13.60000      -1.00000        .      constraint_3
+                                            .               +Inf       18.80000          +Inf          +Inf
+
+     2 constraint_1 NU       7.00000        .               -Inf        1.00000      -1.40000      10.40000 constraint_2
+                                           1.40000       7.00000           +Inf          +Inf          +Inf
+
+     3 constraint_2 BS      13.00000      -9.00000       4.00000           -Inf       -.93333       6.66667 constraint_1
+                                            .               +Inf       13.00000          +Inf          +Inf
+
+     4 constraint_3 NL      -5.00000        .           -5.00000           -Inf          -Inf          +Inf
+                                          -1.80000          +Inf       13.00000       1.80000     -13.60000 constraint_2
+
+GLPK 4.45 - SENSITIVITY ANALYSIS REPORT                                                                         Page   2
+
+Problem:    example2_max
+Objective:  z = 18.8 (MAXimum)
+
+   No. Column name  St      Activity      Obj coef   Lower bound       Activity      Obj coef  Obj value at Limiting
+                                          Marginal   Upper bound          range         range   break point variable
+------ ------------ -- ------------- ------------- -------------  ------------- ------------- ------------- ------------
+     1 x            BS       1.00000       -.40000          -Inf       -2.00000      -3.20000      16.00000 constraint_1
+                                            .               +Inf       10.00000       3.20000      22.40000 constraint_3
+
+     2 y            BS       6.00000       3.20000          -Inf        3.00000        .40000       2.00000 constraint_1
+                                            .               +Inf        6.00000          +Inf          +Inf
+
+End of report

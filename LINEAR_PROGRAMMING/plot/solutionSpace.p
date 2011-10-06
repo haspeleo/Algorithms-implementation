@@ -4,6 +4,7 @@
  set term postscript eps color blacktext "Helvetica" 24
  set output 'solutionSpace.eps'
 
+
  stirling(x)=sqrt(2 * pi * x ) * x**x * exp(-x)
  fact(x) = (x == 0) ? 1 : x * fact(x - 1)
  

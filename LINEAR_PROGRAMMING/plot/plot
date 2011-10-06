@@ -7,5 +7,5 @@ OUTFIG=solutionSpace.eps
 PLOTFILE=solutionSpace.p
 
 gnuplot < $PLOTFILE
-
-acroread $OUTFIG &
+epstopdf $OUTFIG
+acroread solutionSpace.pdf &

@@ -1,0 +1,12 @@
+#! /bin/sh
+
+# to plot results in .p file 
+#do some cleaning 
+rm -rf calculators.eps calculators.pdf
+
+OUTFIG=calculators.eps
+PLOTFILE=calculators_graph.p
+
+gnuplot < $PLOTFILE
+epstopdf $OUTFIG
+acroread calculators.pdf &
