@@ -1,0 +1,41 @@
+Problem:    example1
+Rows:       4
+Columns:    5
+Non-zeros:  11
+Status:     OPTIMAL
+Objective:  z = 34 (MAXimum)
+
+   No.   Row name   St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 z            B             34                             
+     2 constraint_1 NS            14            14             =       2.33333 
+     3 constraint_2 NS             0            -0             =         < eps
+     4 constraint_3 NS             2             2             =      0.666667 
+
+   No. Column name  St   Activity     Lower bound   Upper bound    Marginal
+------ ------------ -- ------------- ------------- ------------- -------------
+     1 x            B              6             0               
+     2 y            B              4             0               
+     3 s1           NL             0             0                    -2.33333 
+     4 s2           B             14             0               
+     5 s3           NL             0             0                   -0.666667 
+
+Karush-Kuhn-Tucker optimality conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.DE: max.abs.err = 1.11e-16 on column 1
+        max.rel.err = 1.59e-17 on column 1
+        High quality
+
+KKT.DB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
