@@ -1,0 +1,643 @@
+                                   C++
+                        OBJECT ORIENTED PROGRAMMING
+                               POLYMORPHISM
+                                                -Sanchit Karve
+                                                 born2c0de@hotmail.com
+
+
+
+REQUIREMENTS:
+-> Should know Inheritance in C++
+
+That's it. But in the end I explain how the compiler implements polymorphism and
+so knowledge of Assembly Language will be a great help in understanding
+Polymorphism. Nevertheless I will still try to make the assembly explanation as
+simple as possible.So even if you don't know Assembly,try understanding it.
+
+
+
+
+I.                         WHAT IS POLYMORPHISM?
+
+
+Polymorphism is in short the ability to call different functions by just using
+one type of function call.It is a lot useful since it can group classes and
+their functions together.Polymorphism is the most important part of Object-
+Oriented Programming. Some people feel that if they have an idea of what classes
+are they have stepped in the object-oriented world.But this is not true.
+Polymorphism is the core of object-oriented programming and if anybody stops
+here he's missing out the best part of Object Oriented Programming(OOP).All this
+may seem a lot hard to understand but read on......you'll understand better as
+you keep reading.
+
+
+Let us now try to understand polymorphism with the help of an example.Suppose we
+want to draw a picture consisting of circles,squares,lines and triangles.So we
+can make a class Shape and create an instance of it like this:
+      Shape *s[100];
+
+Now all the addresses of the objects of the other classes(line,circle etc.) are
+stored in the Shape Array.And then to draw the Picture all we have to do is this:
+   for(int i=0;i<=100;i++)
+       s[i]->draw();
+
+Now as the loop runs different draw functions of each class is called. This is
+great because:
+ i. Functions from different classes are executed through the same function call.
+ i. The Array s[] has been defined to contain shape pointers and not square or
+    triangle pointers.
+
+This can be done by using Virtual Functions.
+
+
+
+II.                        VIRTUAL FUNCTIONS????????
+
+The Literal Meaning of Virtual means to appear like something while in reality
+it is something else ie. when virtual functions are used, a program appears to
+call a function of one class but actually it may be calling a function from
+another class.In the previous example draw() is a virtual function since it
+calls different draw functions from different classes by using the same function
+call draw();
+
+
+Now how do we know which version of draw() would be called during execution?
+Which draw() function would get used depends on the contents of s[i].But for
+this polymorphic approach to work we must satisfy the following conditions:
+->The Base class must contain a draw() function which is declared virtual.
+->All other classes(line,circle etc.) should be derived from the base class.
+
+
+Well, all this may be hard to understand in just one go so we'll start using
+programs that'll help us understand better.Here's the First One.
+
+#include <iostream>
+
+using namespace std;
+
+class base                          //Base Class
+{
+ public:
+   void func()
+   {
+     cout<<"In base::func()\n";
+   }
+};
+
+class d1:public base                       // Derived Class 1
+{
+ public:
+   void func()
+   {
+    cout<<"In d1::func()\n";
+   }
+};
+
+class d2:public base     // Derived Class 2
+{
+ public:
+   void func()
+   {
+    cout<<"In d2::func()\n";
+   }
+};
+
+int main()
+{
+  d1 d;
+  base *b=&d;
+  b->func();
+  d2 e;
+  b=&e;
+  b->func();
+  return 0;
+}
+
+Run this program and you would see that the output would be:
+In base::func()
+In base::func()
+
+Shouldn't this statement give an error? (b=&e;) No. Since the compiler allows a
+pointer of a base class to accept addresses of derived class objects.This is
+known as UPCASTING.Here the Compiler looks at the type of pointer b and since it
+belongs to the base class it calls the base class function.
+
+But now, let's make a slight modification in our program. Precede the
+declaration of func() in the base class with the keyword virtual so that it
+looks like this:
+
+virtual void func()
+{
+   cout<<"In base::func()\n";
+}
+
+
+Now Compile and Run the Program. Now the Output is:
+In d1::func()
+In d2::func()
+
+This time the Compiler looks at the contents of the pointer instead of it's type.
+Hence since addresses of objects of d1 and d2 classes are stored in *b the
+respective func() is called.But this way how does the compiler know which
+function to compile when it doesn't know which object's address 'b' might
+contain?Which version does the compiler call?
+
+Actually even the compiler does not know which function to call at compile-time.
+Hence it decides which function to call at run-time with the help of a table
+called VTABLE. Using this table the compiler finds what object is pointed by
+the pointer b and then calls the appropriate function. VTABLE is explained later.
+
+The method by which the compiler decides which function to call at run-time is
+known as late-binding or dynamic-binding. It slows down the program but makes it
+a lot more flexible.
+
+III.                    PURE VIRTUAL FUNCTIONS
+
+
+Now we realise that since the base class virtual function never gets called
+anyway we'd better keep it's body blank.But there's a better way to do this.
+We can change the virtual function func() in the base class to the following:
+virtual void func()=0;
+
+The =0 is not an assignment operator here but it is just a way of telling the
+compiler that the function has no body.But there is another side of this. An
+object of a class which contains a pure virtual function cannot be created.It
+seems logical enough ie. If you have classes triangle,square,circle derived from
+shape class we wouldn't want to make an object of the shape class.Hence the
+shape class should be provided with a pure virtual function.If you even try to
+create an object of a class containing a pure virtual function the compiler
+would report an error even pointing out which pure virtual function prevents you
+from creating an object.
+
+
+IV.                         HOW VIRTUAL FUNCTIONS WORK
+
+Using Virtual Functions is just one part of polymorphism and knowing how they
+work completes the other half.When the keyword 'virtual' is inserted in the
+declaration of the function the compiler inserts all mechanisms in the program
+to use Virtual Functions. Each Class has a VTABLE that stores the functions that
+it can access and Each class contains a VPTR which can access the VTABLE.Look at
+this program and the table below it and you will understand the VTABLE and the
+VPTR.
+
+
+#include <stdio.h>
+
+
+class item
+{
+  public:
+     virtual void price()
+     {
+       printf("In item::price()\n");
+     }
+     virtual void type()
+     {
+       printf("In item::type()\n");
+     }
+     void display();
+};
+void item::display(){printf("In item::display()\n");}
+
+class microwave:public item
+{
+ public:
+    void price()
+    {
+      printf("Microwave::Price()\n");
+    }
+
+    void type()
+    {
+      printf("Microwave::type()\n");
+    }
+};
+
+class computer:public item
+{
+  public:
+     void price()
+     {
+        printf("Compuer::Price()\n");
+     }
+};
+
+class radio:public item
+{
+ public:
+    void type()
+    {
+      printf("radio::type()\n");
+    }
+};
+
+int main()
+{
+  microwave m1;
+  computer c1;
+  radio r1;
+
+  item *i=&m1;
+  i->price();
+  i->type();
+  printf("\n");
+
+  i=&c1;
+  i->price();
+  i->type();
+  i->display();
+  printf("\n");
+
+  i=&r1;
+  i->price();
+  i->type();
+  printf("\n");
+
+  microwave m2;
+  i=&m2;
+  i->price();
+  i->type();
+  i->display();
+  printf("\n");
+  return 0;
+}
+
+The Output of this Program would be:
+
+Microwave::Price()
+Microwave::type()
+
+Compuer::Price()
+In item::type()
+In item::display()
+
+In item::price()
+radio::type()
+
+Microwave::Price()
+Microwave::type()
+In item::display()
+
+Now here is how the VTABLE of each class Looks Like:
+-------------------------------------------------------------------------------|
+ITEM POINTERS   |     OBJECTS         |                 VTABLES                |
+-------------------------------------------------------------------------------|
+i-------------> |    item{VPTR}---->  |        &item::price()                  |
+                |                     |        &item::type()                   |
+-------------------------------------------------------------------------------|
+                |                     |                                        |
+i-------------> |microwave m1,m2{VPTR}|        &microwave::price()             |
+                |                     |        &microwave::type()              |
+-------------------------------------------------------------------------------|
+                |                     |                                        |
+i-------------> | computer c1{VPTR}-> |        &computer::price()              |
+                |                     |        &item::type()                   |
+-------------------------------------------------------------------------------|
+                |                     |                                        |
+i-------------->| radio r1{VPTR}----> |        &item::price()                  |
+                |                     |        &radio::type()                  |
+-------------------------------------------------------------------------------|
+
+
+First the VPTR Pointer is initialised to it's proper VTABLE by the contructor
+which is automatically done by the compiler.When a Virtual Function is being
+called the VPTR looks up the VTABLE and calls the virtual function.If the
+function is not present in the VTABLE [like here display()] then the function of
+the base class is called. So everywhere where the display function is called
+item::display() is called everytime.No matter how many objects of a class are
+created they all point to the same VTABLE of the class.
+
+
+V.                    ARE VIRTUAL FUNCTIONS OPTIONAL?
+
+Normal Function calls are called by the Assembly instruction 'call' while
+virtual functions require complex instructions. This takes up code space as well
+as execution time.
+
+Virtual Functions reduce the code's speed. Some languages like SmallTalk perform
+Late Binding everytime a function is called and hence SmallTalk Programs aren't
+fast enough. But C++ is a Superset of C where Efficiency is important and hence
+C++ allows both static binding as well as late binding. The default convention
+used is static binding so that there is no loss in speed.
+
+Don't stop using Virtual Functions in your classes just because they reduce
+execution speed. Infact it makes it easier to manage and code and it's
+advantages are more than it's disadvantages. So wherever possible use Virtual
+Functions in your classes.
+
+
+VI.                             MISCELLENEOUS
+
+1)  If a Virtual Function is called within a derived classes constructor or 
+    destructor then the derived function is always called.
+
+2)  If b is a base class pointer and d is a derived class pointer then b=d will
+    copy only the base class contents and remove the derived class contents.This
+    is known as Object Slicing and should be avoided.
+
+3)  For a Virtual Function to work the function must be present in tha base
+    class even though it is declared virtual in the derived class.
+
+4)  Virtual Destructors can also be used and they allow execution of the derived
+    destructor first and then it calls itself.
+    
+
+VII.                           VIRTUAL BASE CLASSES
+
+
+Consider a situation when a 'base' class has two classes derived from it.For 
+example derived1 and  derived2.
+Suppose we create another class which derives itself from both the derived
+classes ie. derived3.Now suppose a member function of derived3 wants to access 
+data or functions in a base class.Since derived1 and derived2 are are derived 
+from base each inherits a copy of base.This copy is referred to as a subobject.
+Now when derived3 refers to the data in the base class, which of the two copies 
+should it access? The compiler notices this ambiguous situation and reports an 
+error. To get rid of this we should make derived1 and derived2 as virtual base
+classes.This is shown in the following program.
+
+#include <iostream>
+
+using namespace std;
+
+class base
+{
+   protected:
+   int data;
+   
+   public:
+   base()
+   {
+    data=10;
+   }
+};
+
+class derived1 : virtual public base
+{};
+
+class derived2 : virtual public base
+{};
+
+class derived3 : public derived1,public derived2
+{
+   public:
+   int getdata()
+   {
+      return data;
+   }
+};
+
+int main()
+{
+  derived3 d3;
+  int val=d3.getdata();
+  cout<<val<<endl;
+  return 0;
+}
+
+Using the keyword virtual in the two classes derived1 and derived2 makes them
+share a single subobject of the base class hence eliminating all ambiguity since 
+there is only one subobject for derived3 to access.Hence derived1 and derived2 
+are known as virtual base classes.
+
+
+
+VIII.                       VTABLE COMPILATION PROOF
+		THIS PROGRAM IS COMPILED BY BORLAND C++ 5.02
+Lot of people know that the compiler uses a VTABLE to implement Virtual 
+Functions but few get to see the actual code that the compiler generates.To save 
+space I shall Compile the same program which uses the item,microwave,computer 
+and radio class and explain how the compiler implements Virtual Functions. I 
+have used IDA Pro to disassemble this program. Here is the disassembled listing 
+followed by the explanation. I have included line numbers so that I can just 
+refer to the line numbers while explaining how the program works.
+
+
+;                           THE FUNCTION  main()
+_main		proc near
+
+m2_VPTR		= dword	ptr -10h
+r1_VPTR		= dword	ptr -0Ch
+c1_VPTR		= dword	ptr -8
+m1_VPTR		= dword	ptr -4
+argc		= dword	ptr  8
+argv		= dword	ptr  0Ch
+envp		= dword	ptr  10h
+
+1       	push	ebp
+2		mov	ebp, esp
+3		add	esp, 0FFFFFFF0h	; 16 bytes allocated on	the stack
+4		push	ebx		; Register Saved
+5		mov	[ebp+m1_VPTR], offset item_VTABLE
+6		mov	[ebp+m1_VPTR], offset microwve_VTABLE
+7		mov	[ebp+c1_VPTR], offset item_VTABLE
+8		mov	[ebp+c1_VPTR], offset computer_VTABLE
+9		mov	[ebp+r1_VPTR], offset item_VTABLE
+10		mov	[ebp+r1_VPTR], offset radio_VTABLE
+11		lea	ebx, [ebp+m1_VPTR]
+12		push	ebx		; this*	pushed
+13		mov	eax, [ebx]
+14		call	dword ptr [eax]	; Calls	microwve_price
+15		pop	ecx		; 4 bytes freed	used up	by this*
+16		push	ebx		; this*	pushed
+17		mov	edx, [ebx]
+18		call	dword ptr [edx+4] ; Calls microwve_type
+19		pop	ecx		; 4 bytes freed	used up	by this*
+20		push	offset newline	; __va_args
+21		call	_printf
+22		pop	ecx		; 4 bytes cleared used up by argument
+23		lea	ebx, [ebp+c1_VPTR]
+24		push	ebx		; this*	pushed
+25		mov	eax, [ebx]
+26		call	dword ptr [eax]
+27		pop	ecx
+28		push	ebx
+29		mov	edx, [ebx]
+30		call	dword ptr [edx+4]
+31		pop	ecx
+32		push	ebx
+33		call	item_display
+34		pop	ecx
+35		push	offset newline1	; __va_args
+36		call	_printf
+37		pop	ecx
+38		lea	ebx, [ebp+r1_VPTR]
+39		push	ebx
+40		mov	eax, [ebx]
+41		call	dword ptr [eax]
+42		pop	ecx
+43		push	ebx
+44		mov	edx, [ebx]
+45		call	dword ptr [edx+4]
+46		pop	ecx
+47		push	offset newline2	; __va_args
+48		call	_printf
+49		pop	ecx
+50		mov	[ebp+m2_VPTR], offset item_VTABLE
+51		mov	[ebp+m2_VPTR], offset microwve_VTABLE
+52		lea	ebx, [ebp+m2_VPTR]
+53		push	ebx
+54		mov	eax, [ebx]
+55		call	dword ptr [eax]
+56		pop	ecx
+57		push	ebx
+58		mov	edx, [ebx]
+59		call	dword ptr [edx+4]
+60		pop	ecx
+61		push	ebx
+62		call	item_display
+63		pop	ecx
+64		push	offset newline3	; __va_args
+65		call	_printf
+66		pop	ecx
+67		pop	ebx
+68		mov	esp, ebp
+69		pop	ebp
+70		retn
+_main		endp
+
+item_price	proc near              ; Function item::price()
+1		push	ebp
+2		mov	ebp, esp
+3		push	offset aInItemPrice ;__va_args
+4		call	_printf
+5		pop	ecx
+6		pop	ebp
+7		retn
+item_price	endp
+
+
+radio_type	proc near               ;   Function radio::type()
+1		push	ebp
+2		mov	ebp, esp
+3		push	offset aRadioType ; __va_args
+4		call	_printf
+5		pop	ecx
+6		pop	ebp
+7		retn
+radio_type	endp
+
+
+computer_price	proc near                ;  Function computer::price()
+1		push	ebp
+2		mov	ebp, esp
+3		push	offset aCompuerPrice ; __va_args
+4		call	_printf
+5		pop	ecx
+6		pop	ebp
+7		retn
+computer_price	endp
+
+
+item_type	proc near                ; Function item::type()
+
+1		push	ebp
+2		mov	ebp, esp
+3		push	offset aInItemType ; __va_args
+4		call	_printf
+5		pop	ecx
+6		pop	ebp
+7		retn
+item_type	endp
+
+
+microwve_price	proc near                 ;Function microwave::price()
+1		push	ebp
+2		mov	ebp, esp
+3		push	offset aMicrowavePrice ; __va_args
+4		call	_printf
+5		pop	ecx
+6		pop	ebp
+7		retn
+microwve_price	endp
+
+
+microwve_type	proc near                  ;Function microwave::type()
+1		push	ebp
+2		mov	ebp, esp
+3		push	offset aMicrowaveType ;	__va_args
+4		call	_printf
+5		pop	ecx
+6		pop	ebp
+7		retn
+microwve_type	endp
+
+
+;                             THE  DATA   SECTION
+
+
+aInItemDisplay	db 'In item::display()',0Ah,0
+newline		db 0Ah,0
+newline1	db 0Ah,0
+newline2	db 0Ah,0
+newline3	db 0Ah,0
+
+aInItemPrice	db 'In item::price()',0Ah,0
+aRadioType	db 'radio::type()',0Ah,0
+aCompuerPrice	db 'Compuer::Price()',0Ah,0
+aInItemType	db 'In item::type()',0Ah,0
+aMicrowavePrice	db 'Microwave::Price()',0Ah,0
+aMicrowaveType	db 'Microwave::type()',0Ah,0
+
+;                            THE   VTABLES
+
+radio_VTABLE	dd offset item_price
+		dd offset radio_type
+
+computer_VTABLE	dd offset computer_price
+		dd offset item_type
+
+item_VTABLE	dd offset item_price
+		dd offset item_type
+
+microwve_VTABLE	dd offset microwve_price
+		dd offset microwve_type
+		
+		
+
+
+----------------------------EXPLANATION-----------------------------------------
+
+For those who know nothing about Assembly but still dared to read till here 
+should remember that in Assembly code anything after the semicolon ';' is a
+Remark. So between code I have inserted remarks so that it is easier to read.
+
+Since we did not include the constructor in our code the compiler automatically 
+inserts it between the main() section.Hence we can see in LINE 5. that m1_VPTR 
+is first initialised to the VTABLE of item. Then in the next LINE m1_VPTR points 
+to the address of the VTABLE of Microwave class.The same process continues till 
+LINE 9.
+
+Now in LINE 13. EAX contains the address pointed to by EBX ie. microwave_VTABLE.
+In LINE 14. it calls the function which is located at the address of eax ie.
+microwave::price(). This is the call of a virtual function.Look through the data 
+Section and see how the VTABLES are set.
+
+In LINE 33. there is a straight-forward call to item::display() and this is how 
+a non-virtual function is called. Now compare the calling process of a non-
+virtual function to that of a virtual function. You will notice that the calling 
+of a virtual function includes the following process:
+1) Initialise the VPTR to that of the Base class VTABLE
+2) Set the VPTR to the Derived class VTABLE
+3) Load the address of the VTABLE in a Register
+4) Call the Function located at the address pointed to by the VTABLE
+
+But you require just one step to call a non-virtual function ie. the call 
+instruction followed by the function name.
+
+You should notice that the other microwave object also points to the same VTABLE 
+but has a different VPTR. Each Class has it's own VTABLE and is shared among all 
+VPTR's of the Same class.
+
+In LINE 30. the instruction  call dword ptr [edx+4] calls the function located 
+at the (address+4 bytes) pointed by the EDX Register. This means that the 2nd 
+Function in the VTABLE is called.
+
+Notice that in the VTABLE of the radio class the address of item::price() is 
+present.I hope you understand and appreciate the implementation of virtual 
+functions by the compiler.
+
+This is the end of our tutorial. I hope you use Virtual Functions in your 
+programs since it is easier to code your programs using these functions. If you 
+have any doubts regarding Polymorphism feel free to contact me via email at 
+born2c0de@hotmail.com
