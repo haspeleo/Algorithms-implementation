@@ -2,6 +2,8 @@ http://www.purplemath.com/modules/linprog.htm -- Tutorial
 http://www.princeton.edu/~rvdb/LPbook/  --princeton
 
 http://www.gnu.org/software/glpk/#downloading -- GLPK software
+http://en.wikibooks.org/wiki/GLPK/Using_GLPSOL#Passing_values_via_the_command-line
+http://en.wikibooks.org/wiki/GLPK/Scripting_plus_MathProg#Passing_values_via_the_command-line -- with Awk
 
 http://www.ibm.com/developerworks/linux/library/l-glpk1/   #resources -- tutorial
 http://www.ibm.com/developerworks/linux/library/l-glpk2/
