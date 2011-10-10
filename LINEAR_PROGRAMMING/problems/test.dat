@@ -1,0 +1,4 @@
+# data file 5
+data;
+param iter := 5;
+end;

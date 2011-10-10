@@ -1,0 +1,9 @@
+#! /bin/sh
+
+#Compile sample.cpp example and link it with the glpk librairy
+
+LIBGLPK="/home/doghmen/Downloads/glpk-4.35/include"
+LINKING="/home/doghmen/Downloads/glpk-4.35"
+
+
+g++ -I$LIBGLPK -L$LINKING -lglpk -lm -lz sample.cpp -o lp
