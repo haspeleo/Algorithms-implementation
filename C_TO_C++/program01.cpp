@@ -1,5 +1,6 @@
 /* 
  * http://www.4p8.com/eric.brasseur/cppcen.html
+ * http://bruno-garcia.net/www/Cours/
  * new way to include librairies
  */
 
