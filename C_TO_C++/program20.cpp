@@ -10,29 +10,28 @@ public:
     int x; 
     int y;
     
-    Vector(int x = 0, int y = 0) {
+    Vector(int a = 0, int b = 0) {
         
-        this->x = x;
-        this->y = y; 
+        x = a;
+        y = b; 
     }
     
-//};
+    double surface();
+};
 
-double surface() {
+double Vector::surface() {
     
     return x * y; 
 }
 
-};
+
 
 int main () {
     
     
     Vector v(2, 3);
-    //v.x = 2;
-    //v.y = 3;
-    
-    cout <<"Surface :" << v.surface() <<endl;
+  
+    cout <<"Surface : " << v.surface() <<endl;
     
     return 0;
 }

@@ -110,6 +110,8 @@
       </item>
       <item path="program19bis.cpp" ex="true" tool="1" flavor="0">
       </item>
+      <item path="program20.cpp" ex="true" tool="1" flavor="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
