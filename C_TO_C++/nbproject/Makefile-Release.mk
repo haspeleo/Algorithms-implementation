@@ -35,6 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/program18.o \
+	${OBJECTDIR}/program19bis.o \
 	${OBJECTDIR}/program15bis.o \
 	${OBJECTDIR}/program11.o \
 	${OBJECTDIR}/program13.o \
@@ -48,14 +49,16 @@ OBJECTFILES= \
 	${OBJECTDIR}/program09.o \
 	${OBJECTDIR}/program15.o \
 	${OBJECTDIR}/program16.o \
+	${OBJECTDIR}/program20.o \
 	${OBJECTDIR}/program10.o \
 	${OBJECTDIR}/program01.o \
 	${OBJECTDIR}/program19.o \
 	${OBJECTDIR}/program17.o \
 	${OBJECTDIR}/program04.o \
 	${OBJECTDIR}/program14.o \
-	${OBJECTDIR}/program18bis.o \
+	${OBJECTDIR}/program19_chaine.o \
 	${OBJECTDIR}/program05.o \
+	${OBJECTDIR}/program18bis.o \
 	${OBJECTDIR}/program06.o
 
 
@@ -87,6 +90,11 @@ ${OBJECTDIR}/program18.o: program18.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program18.o program18.cpp
+
+${OBJECTDIR}/program19bis.o: program19bis.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program19bis.o program19bis.cpp
 
 ${OBJECTDIR}/program15bis.o: program15bis.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -153,6 +161,11 @@ ${OBJECTDIR}/program16.o: program16.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program16.o program16.cpp
 
+${OBJECTDIR}/program20.o: program20.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program20.o program20.cpp
+
 ${OBJECTDIR}/program10.o: program10.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -183,15 +196,20 @@ ${OBJECTDIR}/program14.o: program14.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program14.o program14.cpp
 
-${OBJECTDIR}/program18bis.o: program18bis.cpp 
+${OBJECTDIR}/program19_chaine.o: program19_chaine.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program18bis.o program18bis.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program19_chaine.o program19_chaine.cpp
 
 ${OBJECTDIR}/program05.o: program05.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program05.o program05.cpp
+
+${OBJECTDIR}/program18bis.o: program18bis.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program18bis.o program18bis.cpp
 
 ${OBJECTDIR}/program06.o: program06.cpp 
 	${MKDIR} -p ${OBJECTDIR}
