@@ -34,6 +34,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/program22.o \
 	${OBJECTDIR}/program18.o \
 	${OBJECTDIR}/program19bis.o \
 	${OBJECTDIR}/program15bis.o \
@@ -42,6 +43,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/program02.o \
 	${OBJECTDIR}/program17bis.o \
 	${OBJECTDIR}/program08.o \
+	${OBJECTDIR}/program25.o \
 	${OBJECTDIR}/program07.o \
 	${OBJECTDIR}/program12.o \
 	${OBJECTDIR}/program03.o \
@@ -49,6 +51,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/program09.o \
 	${OBJECTDIR}/program15.o \
 	${OBJECTDIR}/program16.o \
+	${OBJECTDIR}/program26.o \
 	${OBJECTDIR}/program20.o \
 	${OBJECTDIR}/program10.o \
 	${OBJECTDIR}/program01.o \
@@ -56,9 +59,12 @@ OBJECTFILES= \
 	${OBJECTDIR}/program17.o \
 	${OBJECTDIR}/program04.o \
 	${OBJECTDIR}/program14.o \
+	${OBJECTDIR}/program21.o \
+	${OBJECTDIR}/program24.o \
 	${OBJECTDIR}/program19_chaine.o \
 	${OBJECTDIR}/program05.o \
 	${OBJECTDIR}/program18bis.o \
+	${OBJECTDIR}/program23.o \
 	${OBJECTDIR}/program06.o
 
 
@@ -85,6 +91,11 @@ LDLIBSOPTIONS=
 ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__ ${OBJECTFILES} ${LDLIBSOPTIONS} 
+
+${OBJECTDIR}/program22.o: program22.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program22.o program22.cpp
 
 ${OBJECTDIR}/program18.o: program18.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -126,6 +137,11 @@ ${OBJECTDIR}/program08.o: program08.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program08.o program08.cpp
 
+${OBJECTDIR}/program25.o: program25.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program25.o program25.cpp
+
 ${OBJECTDIR}/program07.o: program07.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -160,6 +176,11 @@ ${OBJECTDIR}/program16.o: program16.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program16.o program16.cpp
+
+${OBJECTDIR}/program26.o: program26.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program26.o program26.cpp
 
 ${OBJECTDIR}/program20.o: program20.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -196,6 +217,16 @@ ${OBJECTDIR}/program14.o: program14.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program14.o program14.cpp
 
+${OBJECTDIR}/program21.o: program21.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program21.o program21.cpp
+
+${OBJECTDIR}/program24.o: program24.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program24.o program24.cpp
+
 ${OBJECTDIR}/program19_chaine.o: program19_chaine.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -210,6 +241,11 @@ ${OBJECTDIR}/program18bis.o: program18bis.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program18bis.o program18bis.cpp
+
+${OBJECTDIR}/program23.o: program23.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program23.o program23.cpp
 
 ${OBJECTDIR}/program06.o: program06.cpp 
 	${MKDIR} -p ${OBJECTDIR}

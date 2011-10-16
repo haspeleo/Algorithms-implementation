@@ -38,6 +38,12 @@
       <itemPath>program19_chaine.cpp</itemPath>
       <itemPath>program19bis.cpp</itemPath>
       <itemPath>program20.cpp</itemPath>
+      <itemPath>program21.cpp</itemPath>
+      <itemPath>program22.cpp</itemPath>
+      <itemPath>program23.cpp</itemPath>
+      <itemPath>program24.cpp</itemPath>
+      <itemPath>program25.cpp</itemPath>
+      <itemPath>program26.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -111,6 +117,16 @@
       <item path="program19bis.cpp" ex="true" tool="1" flavor="0">
       </item>
       <item path="program20.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program21.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program22.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program23.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program24.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program25.cpp" ex="true" tool="1" flavor="0">
       </item>
     </conf>
     <conf name="Release" type="1">
