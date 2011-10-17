@@ -15,13 +15,13 @@ NM=nm
 CCADMIN=CCadmin
 RANLIB=ranlib
 CC=gcc
-CCC=g++-4.4
-CXX=g++-4.4
+CCC=g++
+CXX=g++
 FC=gfortran
 AS=as
 
 # Macros
-CND_PLATFORM=GNU-Linux-x86
+CND_PLATFORM=GNU-MacOSX
 CND_CONF=Debug
 CND_DISTDIR=dist
 CND_BUILDDIR=build
@@ -34,7 +34,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/program26.o
+	${OBJECTDIR}/program29bis.o
 
 
 # C Compiler Flags
@@ -61,10 +61,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__ ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
-${OBJECTDIR}/program26.o: program26.cpp 
+${OBJECTDIR}/program29bis.o: program29bis.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/program26.o program26.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/program29bis.o program29bis.cpp
 
 # Subprojects
 .build-subprojects:

@@ -7,13 +7,13 @@ CND_BASEDIR=`pwd`
 CND_BUILDDIR=build
 CND_DISTDIR=dist
 # Debug configuration
-CND_PLATFORM_Debug=GNU-Linux-x86
-CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-Linux-x86
+CND_PLATFORM_Debug=GNU-MacOSX
+CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
 CND_ARTIFACT_NAME_Debug=c_to_c__
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-Linux-x86/c_to_c__
-CND_PACKAGE_DIR_Debug=dist/Debug/GNU-Linux-x86/package
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/c_to_c__
+CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
 CND_PACKAGE_NAME_Debug=ctoc++.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-Linux-x86/package/ctoc++.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/ctoc++.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-Linux-x86
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-Linux-x86
