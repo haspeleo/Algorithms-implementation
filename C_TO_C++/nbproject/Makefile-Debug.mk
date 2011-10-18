@@ -34,7 +34,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/program29bis.o
+	${OBJECTDIR}/program30.o
 
 
 # C Compiler Flags
@@ -61,10 +61,10 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_to_c__ ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
-${OBJECTDIR}/program29bis.o: program29bis.cpp 
+${OBJECTDIR}/program30.o: program30.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/program29bis.o program29bis.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/program30.o program30.cpp
 
 # Subprojects
 .build-subprojects:

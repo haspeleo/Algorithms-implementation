@@ -47,6 +47,7 @@
       <itemPath>program28.cpp</itemPath>
       <itemPath>program29.cpp</itemPath>
       <itemPath>program29bis.cpp</itemPath>
+      <itemPath>program30.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -136,6 +137,8 @@
       <item path="program28.cpp" ex="true" tool="1" flavor="0">
       </item>
       <item path="program29.cpp" ex="true" tool="1" flavor="0">
+      </item>
+      <item path="program29bis.cpp" ex="true" tool="1" flavor="0">
       </item>
     </conf>
     <conf name="Release" type="1">
