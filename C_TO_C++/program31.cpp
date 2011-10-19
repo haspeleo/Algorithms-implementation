@@ -25,7 +25,7 @@ int main() {
 
     while (!f.eof()) {
 
-        f.get(c);
+        c = f.get(); //or f.get(c);
         cout << c;
     }
 
