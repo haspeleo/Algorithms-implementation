@@ -8,3 +8,7 @@ time find . -name "*.jpg" -print 0 | xargs -0 ls
 
 
 big win for xargs ;-)
+
+
+http://www.linuxjournal.com/content/floating-point-math-bash
+to let you do 3.21 / 2.5 
