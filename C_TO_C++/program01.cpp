@@ -1,6 +1,7 @@
 /* 
  * http://www.4p8.com/eric.brasseur/cppcen.html
  * http://bruno-garcia.net/www/Cours/
+ * http://www.javaprogrammingworld.com/scjp-mock-exam/  --java certification
  * new way to include librairies
  */
 
