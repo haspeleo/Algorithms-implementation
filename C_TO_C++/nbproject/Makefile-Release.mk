@@ -37,10 +37,13 @@ OBJECTFILES= \
 	${OBJECTDIR}/program22.o \
 	${OBJECTDIR}/program18.o \
 	${OBJECTDIR}/program19bis.o \
+	${OBJECTDIR}/program30.o \
 	${OBJECTDIR}/program15bis.o \
 	${OBJECTDIR}/program11.o \
-	${OBJECTDIR}/program13.o \
+	${OBJECTDIR}/program28.o \
 	${OBJECTDIR}/program02.o \
+	${OBJECTDIR}/program13.o \
+	${OBJECTDIR}/program29bis.o \
 	${OBJECTDIR}/program17bis.o \
 	${OBJECTDIR}/program08.o \
 	${OBJECTDIR}/program25.o \
@@ -54,11 +57,13 @@ OBJECTFILES= \
 	${OBJECTDIR}/program26.o \
 	${OBJECTDIR}/program20.o \
 	${OBJECTDIR}/program10.o \
+	${OBJECTDIR}/program29.o \
 	${OBJECTDIR}/program01.o \
 	${OBJECTDIR}/program19.o \
 	${OBJECTDIR}/program17.o \
 	${OBJECTDIR}/program04.o \
 	${OBJECTDIR}/program14.o \
+	${OBJECTDIR}/program31.o \
 	${OBJECTDIR}/program21.o \
 	${OBJECTDIR}/program24.o \
 	${OBJECTDIR}/program19_chaine.o \
@@ -107,6 +112,11 @@ ${OBJECTDIR}/program19bis.o: program19bis.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program19bis.o program19bis.cpp
 
+${OBJECTDIR}/program30.o: program30.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program30.o program30.cpp
+
 ${OBJECTDIR}/program15bis.o: program15bis.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -117,15 +127,25 @@ ${OBJECTDIR}/program11.o: program11.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program11.o program11.cpp
 
-${OBJECTDIR}/program13.o: program13.cpp 
+${OBJECTDIR}/program28.o: program28.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program13.o program13.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program28.o program28.cpp
 
 ${OBJECTDIR}/program02.o: program02.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program02.o program02.cpp
+
+${OBJECTDIR}/program13.o: program13.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program13.o program13.cpp
+
+${OBJECTDIR}/program29bis.o: program29bis.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program29bis.o program29bis.cpp
 
 ${OBJECTDIR}/program17bis.o: program17bis.cpp 
 	${MKDIR} -p ${OBJECTDIR}
@@ -192,6 +212,11 @@ ${OBJECTDIR}/program10.o: program10.cpp
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program10.o program10.cpp
 
+${OBJECTDIR}/program29.o: program29.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program29.o program29.cpp
+
 ${OBJECTDIR}/program01.o: program01.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -216,6 +241,11 @@ ${OBJECTDIR}/program14.o: program14.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program14.o program14.cpp
+
+${OBJECTDIR}/program31.o: program31.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/program31.o program31.cpp
 
 ${OBJECTDIR}/program21.o: program21.cpp 
 	${MKDIR} -p ${OBJECTDIR}
