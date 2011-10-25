@@ -1,0 +1,9 @@
+#! /bin/sh 
+
+#c++ -I path/to/boost_1_47_0 example.cpp -o example
+
+#compile with linking to boost library
+g++ -I /users/tao/doghmen/Downloads/boost_1_47_0 simpleProgram.cpp -o boost1
+
+#run example, should print 3 6 9 to standard output
+echo "1 2 3 " | ./boost1
