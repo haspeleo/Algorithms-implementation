@@ -34,8 +34,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/testVirtualHeritage.o \
 	${OBJECTDIR}/Point.o \
-	${OBJECTDIR}/main.o
+	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/VirtualHeritage.o
 
 
 # C Compiler Flags
@@ -62,6 +64,11 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c___design: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c___design ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
+${OBJECTDIR}/testVirtualHeritage.o: testVirtualHeritage.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/testVirtualHeritage.o testVirtualHeritage.cpp
+
 ${OBJECTDIR}/Point.o: Point.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
@@ -71,6 +78,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/VirtualHeritage.o: VirtualHeritage.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/VirtualHeritage.o VirtualHeritage.cpp
 
 # Subprojects
 .build-subprojects:

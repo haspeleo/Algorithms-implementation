@@ -4,7 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>Chaine.h</itemPath>
       <itemPath>Point.h</itemPath>
+      <itemPath>VirtualHeritage.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -14,7 +16,9 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>Point.cpp</itemPath>
+      <itemPath>VirtualHeritage.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
+      <itemPath>testVirtualHeritage.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -37,6 +41,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path="main.cpp" ex="true" tool="1" flavor="0">
+      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
