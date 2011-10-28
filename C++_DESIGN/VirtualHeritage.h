@@ -3,6 +3,9 @@
  * Author: doghmen
  *
  * Created on 27 octobre 2011, 16:19
+ * To solve the multi-heritage problem, we add the virtual heritage modifier
+ * to make the call of the constructor A() just once.
+ * see http://bruno-garcia.net/www/Cours/  -- section 5.6.2.2
  */
 
 #ifndef VIRTUALHERITAGE_H
@@ -18,7 +21,7 @@ private:
     int a;
 };
 
-class B : public A {
+class B : virtual public A {
 
 public:
     B();
@@ -28,7 +31,7 @@ private:
     
 };
 
-class C : public A {
+class C : virtual public A {
 
 public:
     C();
@@ -38,7 +41,7 @@ private:
 };
 
 
-class D : public A, public B, public C {
+class D : virtual public A, public B, public C {
 
 public:
     D();
