@@ -37,6 +37,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/testVirtualHeritage.o \
 	${OBJECTDIR}/Point.o \
 	${OBJECTDIR}/main.o \
+	${OBJECTDIR}/testTemplatePile.o \
 	${OBJECTDIR}/VirtualHeritage.o
 
 
@@ -78,6 +79,11 @@ ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+
+${OBJECTDIR}/testTemplatePile.o: testTemplatePile.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/testTemplatePile.o testTemplatePile.cpp
 
 ${OBJECTDIR}/VirtualHeritage.o: VirtualHeritage.cpp 
 	${MKDIR} -p ${OBJECTDIR}

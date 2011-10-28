@@ -31,7 +31,6 @@ int main(int argc, char** argv) {
     p.deplacerVers(5, 2);
     p.afficher(p);
     
-
     return 0;
 }
 
