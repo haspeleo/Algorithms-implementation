@@ -6,17 +6,32 @@
  */
 
 #include <cstdlib>
+#include <iostream>
 
 #include "Pile.h"
 
 using namespace std;
 
-/*
- * 
- */
-int main(int argc, char** argv) {
 
-    Pile<double> p;
+typedef Pile<int> PileInt;
+
+int main(int, char**) {
+
+
+    PileInt pile;
+
+    for (int i = 0; i < 32; i++) {
+
+        pile.push(2 * i);
+    }
+
+    while (!pile.isEmpty()) {
+
+	cout <<"=>"<< pile.top() <<endl;
+
+        pile.pull();
+    }
+
 
     return 0;
 }
