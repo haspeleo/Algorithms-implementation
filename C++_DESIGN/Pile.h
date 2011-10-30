@@ -28,6 +28,11 @@ public:
         tos = tab - 1;
         nbElements = 0;
     }
+    
+    Pile(const Pile& p) {
+
+	clonage(p);
+    }
 
     Pile& operator=(const Pile& p) {
 	
@@ -37,6 +42,7 @@ public:
 	}
 	return *this;
     }
+
     
     ~Pile() {
 
@@ -98,6 +104,12 @@ void Pile<T>::destruction(void) {
     tos = 0;
 }
 
+template <class T>
+friend ostream &operator << <> (ostream &o, const Pile& p) {
 
+    T* courant = p.tab;
+    while (courant < p.tos)
+	
+    }
 #endif	/* PILE_H */
 
