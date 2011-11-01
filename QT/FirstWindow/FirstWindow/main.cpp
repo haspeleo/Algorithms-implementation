@@ -1,3 +1,9 @@
+/*
+ * File:   main.cpp
+ * Author: doghmen
+ *
+ * Created on 1 novembre 2011, 16:37
+ */
 
 
 #include <QApplication>
@@ -23,3 +29,5 @@ int main ( int argc, char *argv[]) {
 
     return app.exec();
 }
+
+
