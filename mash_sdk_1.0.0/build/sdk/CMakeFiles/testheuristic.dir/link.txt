@@ -1,1 +1,0 @@
-/usr/bin/c++   -g   CMakeFiles/testheuristic.dir/testheuristic.cpp.o  -o ../bin/testheuristic -rdynamic ../bin/libmash-core.so ../lib/libfreeimage.a ../bin/libmash-utils.so -ldl -Wl,-rpath,. 

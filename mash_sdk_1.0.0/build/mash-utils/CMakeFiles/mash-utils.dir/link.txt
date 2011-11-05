@@ -1,1 +1,0 @@
-/usr/bin/c++  -fPIC -g  -shared -Wl,-soname,libmash-utils.so -o ../bin/libmash-utils.so CMakeFiles/mash-utils.dir/errors.cpp.o CMakeFiles/mash-utils.dir/stringutils.cpp.o -ldl -Wl,-rpath,. 

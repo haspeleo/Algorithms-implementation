@@ -1,5 +1,0 @@
-heuristics_read_list()
-heuristics_detect()
-heuristics_display()
-heuristics_write_list()
-heuristics_create_targets()
