@@ -37,7 +37,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/StringBuilder.o \
 	${OBJECTDIR}/CSingleton.o \
 	${OBJECTDIR}/main.o \
-	${OBJECTDIR}/Strategy.o
+	${OBJECTDIR}/Strategy.o \
+	${OBJECTDIR}/VirtualFunctions.o
 
 
 # C Compiler Flags
@@ -83,6 +84,11 @@ ${OBJECTDIR}/Strategy.o: Strategy.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/Strategy.o Strategy.cpp
+
+${OBJECTDIR}/VirtualFunctions.o: VirtualFunctions.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/VirtualFunctions.o VirtualFunctions.cpp
 
 # Subprojects
 .build-subprojects:
