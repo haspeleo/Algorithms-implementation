@@ -34,8 +34,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
+	${OBJECTDIR}/StringBuilder.o \
 	${OBJECTDIR}/CSingleton.o \
-	${OBJECTDIR}/main.o \
 	${OBJECTDIR}/Strategy.o
 
 
@@ -63,15 +63,15 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/faq_c__: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/faq_c__ ${OBJECTFILES} ${LDLIBSOPTIONS} 
 
+${OBJECTDIR}/StringBuilder.o: StringBuilder.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} $@.d
+	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/StringBuilder.o StringBuilder.cpp
+
 ${OBJECTDIR}/CSingleton.o: CSingleton.cpp 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} $@.d
 	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/CSingleton.o CSingleton.cpp
-
-${OBJECTDIR}/main.o: main.cpp 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -g -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
 
 ${OBJECTDIR}/Strategy.o: Strategy.cpp 
 	${MKDIR} -p ${OBJECTDIR}
