@@ -1,0 +1,12 @@
+// How to modify a variable declared constant
+
+int main () {
+
+	const int myVar = 5;
+	
+	int* j = const_cast<int*> (&myVar);
+	*j = *j - 1;
+	cout << *j <<": as you can see j is decremented"<<endl;
+
+return 0;
+}
