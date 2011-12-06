@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildCardHexDump", "WildCardHexDump.csproj", "{4473AE63-6ED4-464F-8643-31482D42A3AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4473AE63-6ED4-464F-8643-31482D42A3AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4473AE63-6ED4-464F-8643-31482D42A3AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4473AE63-6ED4-464F-8643-31482D42A3AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4473AE63-6ED4-464F-8643-31482D42A3AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

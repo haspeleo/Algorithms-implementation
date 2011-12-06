@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestBoxingHit", "TestBoxingHit.csproj", "{F9C3078A-86B1-4B24-8003-A0292605A22B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9C3078A-86B1-4B24-8003-A0292605A22B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C3078A-86B1-4B24-8003-A0292605A22B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C3078A-86B1-4B24-8003-A0292605A22B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C3078A-86B1-4B24-8003-A0292605A22B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

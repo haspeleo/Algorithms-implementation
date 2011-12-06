@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetTodaysDate", "GetTodaysDate.csproj", "{8141C56C-2B0A-4672-8DB3-C4E39C2DC1AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8141C56C-2B0A-4672-8DB3-C4E39C2DC1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8141C56C-2B0A-4672-8DB3-C4E39C2DC1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8141C56C-2B0A-4672-8DB3-C4E39C2DC1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8141C56C-2B0A-4672-8DB3-C4E39C2DC1AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
