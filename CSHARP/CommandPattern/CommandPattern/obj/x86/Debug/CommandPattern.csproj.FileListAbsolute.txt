@@ -1,0 +1,1 @@
+C:\Users\doghmen\AI\CSHARP\CommandPattern\CommandPattern\obj\x86\Debug\ResolveAssemblyReference.cache
