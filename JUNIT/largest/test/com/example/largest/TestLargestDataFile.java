@@ -7,6 +7,8 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.StringTokenizer;
 
+import org.junit.Test;
+
 import junit.framework.TestCase;
 
 public class TestLargestDataFile  extends TestCase {
@@ -20,7 +22,7 @@ public class TestLargestDataFile  extends TestCase {
 	 */
 	
 	
-	@SuppressWarnings("unchecked")
+	@Test
 	public void testFromFile() throws Exception {
 		
 		String line; 
