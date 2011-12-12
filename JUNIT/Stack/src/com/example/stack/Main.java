@@ -8,27 +8,24 @@ public class Main {
 	 */
 	public static void main(String[] args) throws StackEmptyException {
 		
-		Stack stack = new Stack(12);
-		for (int i = 0; i < 10; i++) {
+		Stack stack = new Stack(10);
+		
+		for (int i = 0; i < 5; i++) {
 			stack.push(Integer.toString(i));
 		}
 		
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 5; i++) {
 			stack.getItem(i);
 		}
 		
+		
+		String str1 = stack.pop();
+		String str2 = stack.pop();
+		System.out.println(str1);
+		System.out.println(str2);
 		System.out.println(">> nb Elements: "+Stack.nbElements);
-		stack.isEmpty();
-		stack.isFull();
 		
 		
-		String top = stack.top();
-		System.out.println(top);
-		
-		stack.pop();
-		stack.pop();
-		
-		System.out.println(">> nb Elements: "+Stack.nbElements);
 	}
 
 }

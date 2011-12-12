@@ -2,28 +2,26 @@ package com.example.stack;
 
 public class Stack implements StackExercice {
 	
-	private static final int MAX = 30;
+	public static final int MAX = 30;
 	public int next;  //index in the stack  
 	private String [] stack;
-	public static int nbElements;
+	public static int nbElements = 0;
 	
 	public Stack(int s) {
 		stack = new String [s];
 		next = 0;
-		Stack.nbElements = 0;
+		nbElements = 0;
 	}
 
 	public String pop() throws StackEmptyException {
-		
-		String last = stack[next - 1];
-		Stack.nbElements --;
-		return last;
+	
+		return stack[next - 1];		
 	}
 
 	public void push(String item) {
 		
 		stack[next++] = item;
-		Stack.nbElements ++;
+		nbElements ++;
 	}
 
 	public String top() throws StackEmptyException {

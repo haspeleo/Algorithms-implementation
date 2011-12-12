@@ -1,4 +1,3 @@
-import static org.junit.Assert.*;
 import junit.framework.TestCase;
 
 import org.junit.Test;
@@ -16,20 +15,23 @@ public class TestStackExercice extends TestCase {
 		
 		stack.push("one");
 		stack.push("two");
-		//stack.push("three");
-		System.out.println("Nb elements: "+Stack.nbElements);
-		assertEquals(2, Stack.nbElements);
-		
+		stack.push("three");
+		stack.push("four");
+		System.out.println("::Nb elements: "+Stack.nbElements);
+		assertEquals(4, Stack.nbElements);	
 	}
 	
 	@Test
-	public void testPop() {
+	public void testPop() throws StackEmptyException {
+		stack.push("one");
+		stack.push("two");
 		
+		assertEquals("two", stack.pop());
 	}
 	
 	@Test 
 	public void testTop() {
-		stack.push("four");
+		
 		stack.push("five");
 		stack.push("six");
 		try {
@@ -43,14 +45,14 @@ public class TestStackExercice extends TestCase {
 	
 	@Test 
 	public void testIsEmpty() {
-	
+		
 		assertEquals(false, stack.isEmpty());
 	}
 	
 	@Test 
 	public void tesIsFull() {
 		
-		assertEquals(true, stack.isFull());
+		assertEquals(false, stack.isFull());
 	}
 	
 	
