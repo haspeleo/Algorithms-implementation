@@ -2,47 +2,50 @@ package com.example.stack;
 
 public class Stack implements StackExercice {
 	
-	private static final int MAX = 10;
-	private int next;  //index in the stack  
+	private static final int MAX = 30;
+	public int next;  //index in the stack  
 	private String [] stack;
+	public static int nbElements;
 	
 	public Stack(int s) {
 		stack = new String [s];
-		setNext(0);
+		next = 0;
+		Stack.nbElements = 0;
 	}
 
 	public String pop() throws StackEmptyException {
 		
-		return stack[getNext() - 1];
+		String last = stack[next - 1];
+		Stack.nbElements --;
+		return last;
 	}
 
 	public void push(String item) {
 		
-		stack[getNext()] = item;
+		stack[next++] = item;
+		Stack.nbElements ++;
 	}
 
 	public String top() throws StackEmptyException {
 		
-		return stack[getNext()];
+		return stack[next - 1];
 	}
 
 	public boolean isEmpty() {
 		
-		return (getNext() == 0);
+		return (nbElements == 0);
 	}
 
 	public boolean isFull() {
 		
-		return (getNext() == MAX);
+		return (nbElements == MAX);
 	}
 
-	public int getNext() {
-		return next;
+	public void getItem(int i) {
+		
+		System.out.println("Item["+i+"]= "+ stack[i]);
 	}
 
-	public void setNext(int next) {
-		this.next = next;
-	}
 
 	
 }//class
