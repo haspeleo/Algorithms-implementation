@@ -1,7 +1,6 @@
 package com.example.money;
 
 import junit.framework.TestCase;
-
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -9,8 +8,18 @@ import org.junit.Test;
 
 public class TestMoney extends TestCase {
 
+	//private Money m1;
+	//private Money m2;
+	
+	public TestMoney(String string) {
+		// TODO Auto-generated constructor stub
+	}
+
 	@Before
-	public void setUp() throws Exception {
+	protected void setUp() throws Exception {
+		//common fixture for all tests
+		//m1 = new Money(12, "USD");
+		//m1 = new Money(12, "USD");
 	}
 
 	@After
@@ -33,20 +42,27 @@ public class TestMoney extends TestCase {
 		Money result = m1.add(m2);
 		Money expected = new Money(26, "CHF");
 		
-		//Assert.assertEquals(expected, result);
-		//Assert.assertTrue(expected.equals(result));
 		Assert.assertTrue(equals(expected, result));
 	}
 	
-	/*public void testEquals() {
-	    Money m12CHF= new Money(12, "CHF");
-	    Money m14CHF= new Money(14, "CHF");
-
-	    Assert.assertTrue(!m12CHF.equals(null));
-	    Assert.assertEquals(m12CHF, m12CHF);
-	    Assert.assertEquals(m12CHF, new Money(12, "CHF")); // (1)
-	    Assert.assertTrue(!m12CHF.equals(m14CHF));
+	
+	/*TestCase test = new TestMoney("Simple Add") {
+		public void runTest() {
+			testAdd();
+		}
+	};*/
+	
+	
+	/*public static Test suite() {
+	    TestSuite suite= new TestSuite();
+	    suite.addTest(
+	        new TestMoney("Add function") {
+	            protected void runTest() { testAdd(); }
+	        }
+	    );
+	    return (Test) suite;
 	}*/
+	
 	
 	//Overriding Java method equals to compare two Money objects
 	/*public boolean equals(Object anObject) {
