@@ -3,10 +3,9 @@ package income;
 	import static org.junit.Assert.fail;
 	import junit.framework.Assert;
 	import income.method.ICalcMethod;
-
 	import org.easymock.EasyMock;
 	import org.junit.Before;
-import org.junit.Test;
+	import org.junit.Test;
 
 	public class TestIncomeCalculator {
 
