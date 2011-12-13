@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 
 namespace CommandPattern {
-
-
     
     abstract class AbstractCommand {
 
@@ -16,7 +14,7 @@ namespace CommandPattern {
             this.receiver = receiver; 
         }
 
-        abstract void Execute(); // { }
+        public abstract void Execute(); // { }
 
 
        

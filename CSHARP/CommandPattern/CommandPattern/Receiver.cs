@@ -5,6 +5,8 @@ using System.Text;
 
 namespace CommandPattern {
     
+
+
     class Receiver {
 
         public void Action() {
