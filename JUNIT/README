@@ -1,0 +1,21 @@
+http://junit.sourceforge.net/doc/testinfected/testing.htm
+
+http://today.java.net/pub/a/today/2003/09/12/individual-test-cases.html
+
+http://www.jmdoudoux.fr/java/dej/chap-junit.htm --Developpons en Java book
+
+http://ideoplex.com/id/25/ant-and-junit -- ant
+
+<<<<<<< HEAD
+=======
+Design of JUnit
+
+JUnit is designed around two key design patterns: the Command pattern and the Composite pattern.
+
+A TestCase is a command object. Any class that contains test methods should subclass the TestCase class. A TestCase can define any number of public testXXX() methods. When you want to check the expected and actual test results, you invoke a variation of the assert() method.
+
+TestCase subclasses that contain multiple testXXX() methods can use the setUp() and tearDown() methods to initialize and release any common objects under test, referred to as the test fixture. Each test runs in the context of its own fixture, calling setUp() before and tearDown() after each test method to ensure there can be no side effects among test runs.
+
+TestCase instances can be composed into TestSuite hierarchies that automatically invoke all the testXXX() methods defined in each TestCase instance. A TestSuite is a composite of other tests, either TestCase instances or other TestSuite instances. The composite behavior exhibited by the TestSuite allows you to assemble test suites of test suites of tests, to an arbitrary depth, and run all the tests automatically and uniformly to yield a single pass or fail status.
+
+>>>>>>> 24c7efb903bb5730c5e32fbf85e759cc2cbe1213
