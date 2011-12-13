@@ -16,12 +16,11 @@ namespace CommandPattern {
             Invoker invoker = new Invoker();
 
             // set and execute command
-
             invoker.SetCommand(command);
             invoker.ExecuteCommand();
 
+            
             //wait for user
-
             Console.Read();
 
         }

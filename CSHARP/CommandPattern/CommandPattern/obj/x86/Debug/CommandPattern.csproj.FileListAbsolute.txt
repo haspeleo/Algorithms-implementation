@@ -1,1 +1,5 @@
 C:\Users\doghmen\AI\CSHARP\CommandPattern\CommandPattern\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\doghmen\AI\CSHARP\CommandPattern\CommandPattern\bin\Debug\CommandPattern.exe
+C:\Users\doghmen\AI\CSHARP\CommandPattern\CommandPattern\bin\Debug\CommandPattern.pdb
+C:\Users\doghmen\AI\CSHARP\CommandPattern\CommandPattern\obj\x86\Debug\CommandPattern.exe
+C:\Users\doghmen\AI\CSHARP\CommandPattern\CommandPattern\obj\x86\Debug\CommandPattern.pdb

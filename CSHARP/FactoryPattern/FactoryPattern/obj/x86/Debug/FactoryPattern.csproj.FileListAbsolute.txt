@@ -1,0 +1,5 @@
+C:\Users\doghmen\AI\CSHARP\FactoryPattern\FactoryPattern\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\doghmen\AI\CSHARP\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.exe
+C:\Users\doghmen\AI\CSHARP\FactoryPattern\FactoryPattern\bin\Debug\FactoryPattern.pdb
+C:\Users\doghmen\AI\CSHARP\FactoryPattern\FactoryPattern\obj\x86\Debug\FactoryPattern.exe
+C:\Users\doghmen\AI\CSHARP\FactoryPattern\FactoryPattern\obj\x86\Debug\FactoryPattern.pdb
