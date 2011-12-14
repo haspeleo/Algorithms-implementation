@@ -1,0 +1,5 @@
+C:\Users\doghmen\AI\CSHARP\ProxyPattern\ProxyPattern\bin\Release\ProxyPattern.exe
+C:\Users\doghmen\AI\CSHARP\ProxyPattern\ProxyPattern\bin\Release\ProxyPattern.pdb
+C:\Users\doghmen\AI\CSHARP\ProxyPattern\ProxyPattern\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\doghmen\AI\CSHARP\ProxyPattern\ProxyPattern\obj\x86\Release\ProxyPattern.exe
+C:\Users\doghmen\AI\CSHARP\ProxyPattern\ProxyPattern\obj\x86\Release\ProxyPattern.pdb
