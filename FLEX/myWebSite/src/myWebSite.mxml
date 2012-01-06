@@ -12,7 +12,7 @@
 	</fx:Declarations>
 	<s:Label x="37" y="10" width="360" height="25" fontSize="14" fontWeight="bold"
 			 text="Hassen Doghmen - R&amp;D Engineering" verticalAlign="middle"/>
-	<s:Panel includeIn="startState" x="38" y="59" width="584" height="232">
-		<s:Label x="37" y="-19" fontWeight="bold" text="Accueil"/>
+	<s:Panel includeIn="startState" x="132" y="164" width="584" height="232">
+		<s:Label x="37" y="-19" fontWeight="bold" text="Home Page"/>
 	</s:Panel>
 </s:Application>
