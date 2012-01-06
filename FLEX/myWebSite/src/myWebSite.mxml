@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   minWidth="955" minHeight="600" currentState="startState">
+	<s:states>
+		<s:State name="State1"/>
+		<s:State name="startState"/>
+	</s:states>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<s:Label x="37" y="10" width="360" height="25" fontSize="14" fontWeight="bold"
+			 text="Hassen Doghmen - R&amp;D Engineering" verticalAlign="middle"/>
+	<s:Panel includeIn="startState" x="38" y="59" width="584" height="232">
+		<s:Label x="37" y="-19" fontWeight="bold" text="Accueil"/>
+	</s:Panel>
+</s:Application>
