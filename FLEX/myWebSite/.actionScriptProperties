@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <actionScriptProperties analytics="false" mainApplicationPath="myWebSite.mxml" projectUUID="38e27535-45cf-4ede-8ab0-8e173e76dcaf" version="10">
   <compiler additionalCompilerArguments="-locale en_US" autoRSLOrdering="true" copyDependentFiles="true" fteInMXComponents="false" generateAccessible="true" htmlExpressInstall="true" htmlGenerate="true" htmlHistoryManagement="true" htmlPlayerVersionCheck="true" includeNetmonSwc="false" outputFolderPath="bin-debug" removeUnusedRSL="true" sourceFolderPath="src" strict="true" targetPlayerVersion="0.0.0" useApolloConfig="false" useDebugRSLSwfs="true" verifyDigests="true" warn="true">
     <compilerSourcePath/>
@@ -12,6 +12,7 @@
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
+  <theme themeIsDefault="false" themeIsSDK="true" themeLocation="${SDK_THEMES_DIR}/samples/themes/cobalt"/>
   <applications>
     <application path="myWebSite.mxml"/>
   </applications>
