@@ -3,16 +3,63 @@
 			   xmlns:s="library://ns.adobe.com/flex/spark"
 			   xmlns:mx="library://ns.adobe.com/flex/mx"
 			   minWidth="955" minHeight="600" currentState="startState">
+	
+	<fx:Script>
+		<![CDATA[
+			protected function downloadPdf_clickHandler(event:MouseEvent):void
+			{
+				var url:String = "http://www.lri.fr/~doghmen/CV/CV_Hassen_Doghmen_ExpertEngineer.pdf"; 
+				var request:URLRequest = new URLRequest(url);
+				var fileRef:FileReference = new FileReference();
+				fileRef.download(request);
+				
+			}
+		]]>
+	</fx:Script>
+	
+	
 	<s:states>
-		<s:State name="State1"/>
+		<s:State name="publications"/>
 		<s:State name="startState"/>
 	</s:states>
+	
+	
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
+	
+	
 	<s:Label x="37" y="10" width="360" height="25" fontSize="14" fontWeight="bold"
 			 text="Hassen Doghmen - R&amp;D Engineering" verticalAlign="middle"/>
 	<s:Panel includeIn="startState" x="132" y="164" width="584" height="232">
 		<s:Label x="37" y="-19" fontWeight="bold" text="Home Page"/>
 	</s:Panel>
+	
+	
+	<mx:Accordion includeIn="publications" x="37" y="106" width="509" height="209">
+		<s:NavigatorContent width="100%" height="100%" label="See the Abstract">
+			<s:RichText x="6" y="10" width="476" height="134" text="In the last decade, Monte-Carlo Tree Search (MCTS) has revolutionized the domain of large-scale Markov Decision Process problems. MCTS most often uses the Upper Confidence Tree algorithm to handle the exploration versus exploitation trade-of, while a few heuristics are used to guide the exploration in large search spaces. Among these heuristics is Rapid Action Value Estimate (RAVE). This paper is concerned with extending the RAVE heuristics to continuous action and state spaces. The approach is experimentally validated on two artificial benchmark problems: the treasure hunt game, and a real-world energy management problem. "/>
+			<s:Button x="10" y="139" label="Download pdf"
+					  click="downloadPdf_clickHandler(event)"/>
+		</s:NavigatorContent>
+	</mx:Accordion>
+	
+	
+	<s:BorderContainer includeIn="startState" x="37" y="43" width="442" height="41">
+		<s:Button includeIn="startState" x="30" y="10" label="Home"
+				  click="currentState='publications'"/>
+		<s:Button x="136" y="10" label="Publications" click="currentState='publications'"/>
+	</s:BorderContainer>
+	<s:BorderContainer includeIn="publications" x="37" y="43" width="442" height="41">
+		<s:Button x="30" y="10" label="Home" click="currentState='startState'"/>
+	</s:BorderContainer>
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </s:Application>
