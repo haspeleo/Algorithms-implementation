@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   creationComplete="init()"
+					   currentState="loggedin">
+	
+	
+<!-- Scripts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	<fx:Script>
+		<![CDATA[
+			
+			import com.facebook.graph.FacebookDesktop;
+			import mx.events.FlexEvent;
+			import mx.controls.Alert;
+			
+			private function loginHandler(session:Object, fail:Object):void {
+				
+				if (session) {
+					
+					currentState = "loggedout"; 
+					userImage.source = FacebookDesktop.getImageUrl(session.uid, 'large');
+					userName.text = session.user.name;
+					birthday.text = session.user.birthday;
+				}
+				if (fail) {
+					Alert.show("Logout from session");
+					currentState = "loggedin";
+				} 
+			
+			}
+			
+			private function init():void {
+						
+				FacebookDesktop.init("354086437950560", loginHandler);
+			}
+			
+			protected function login():void {
+			
+				FacebookDesktop.login(loginHandler, ["user_birthday"]);
+			}
+			
+			protected function logout():void {
+				
+				FacebookDesktop.logout();
+				currentState = "loggedin";
+			}
+			
+		]]>
+	</fx:Script>
+	
+	
+	<s:states>
+		<s:State name="loggedout"/>
+		<s:State name="loggedin"/>
+	</s:states>
+	
+<!-- Declarations ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	
+	
+<!-- UI components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	
+	<s:Button id="loginButton" excludeFrom="loggedout" label="Login To Facebook" 
+			  click="login()"
+			  horizontalCenter="0" verticalCenter="0"/>
+	
+	
+	<s:Form includeIn="loggedout" 
+			left="10" top="10" width="321" height="257">
+		
+		<s:Image id="userImage" 
+				 width="155" height="131"/>
+		
+		<s:FormItem width="270" label="User">
+			<s:Label id="userName" width="170"/>
+		</s:FormItem>
+		<s:FormItem width="270" label="Birthday">
+			<s:Label id="birthday" width="170"/>
+		</s:FormItem>
+	</s:Form>
+	<s:Button includeIn="loggedout" 
+			  right="17" top="10" 
+			  label="Logout from Facebook" click="logout()"/>
+	
+</s:WindowedApplication>

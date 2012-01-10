@@ -2,13 +2,15 @@
 <s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
 			   xmlns:s="library://ns.adobe.com/flex/spark"
 			   xmlns:mx="library://ns.adobe.com/flex/mx"
-			   minWidth="955" minHeight="600" currentState="homePage">
+			   minWidth="955" minHeight="600" 
+			   currentState="homePage">
+	
 	<fx:Style source="Styles.css"/>
 	
 	<fx:Script>
 		<![CDATA[
-			protected function downloadPdf_clickHandler(event:MouseEvent):void
-			{
+			protected function downloadPdf_clickHandler(event:MouseEvent):void {
+				
 				var url:String = "http://www.lri.fr/~doghmen/CV/CV_Hassen_Doghmen_ExpertEngineer.pdf"; 
 				var request:URLRequest = new URLRequest(url);
 				var fileRef:FileReference = new FileReference();
