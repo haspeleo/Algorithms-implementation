@@ -11,8 +11,9 @@
 		<![CDATA[
 			
 			import com.facebook.graph.FacebookDesktop;
-			import mx.events.FlexEvent;
+			
 			import mx.controls.Alert;
+			import mx.events.FlexEvent;
 			
 			private function loginHandler(session:Object, fail:Object):void {
 				
@@ -22,12 +23,19 @@
 					userImage.source = FacebookDesktop.getImageUrl(session.uid, 'large');
 					userName.text = session.user.name;
 					birthday.text = session.user.birthday;
+					FacebookDesktop.api("me/statuses", getStatusHandler);
 				}
+				
 				if (fail) {
 					Alert.show("Logout from session");
 					currentState = "loggedin";
 				} 
 			
+			}
+			
+			private function getStatusHandler(result:Object, fail:Object):void {
+				
+				statusLabel.text = result[0].message;	
 			}
 			
 			private function init():void {
@@ -37,7 +45,7 @@
 			
 			protected function login():void {
 			
-				FacebookDesktop.login(loginHandler, ["user_birthday"]);
+				FacebookDesktop.login(loginHandler, ["user_birthday", "read_stream", "publish_stream"]);
 			}
 			
 			protected function logout():void {
@@ -45,6 +53,18 @@
 				FacebookDesktop.logout();
 				currentState = "loggedin";
 			}
+			
+			protected function submitPost():void {
+				
+				FacebookDesktop.api("/me/feed", submitPostHandler, {message:statusInput.text}, "POST");
+			}
+			
+			protected function submitPostHandler(result:Object, fail:Object):void {
+				
+				statusInput.text =""; 
+				FacebookDesktop.api("/me/statuses", getStatusHandler);
+			}
+			
 			
 		]]>
 	</fx:Script>
@@ -65,13 +85,12 @@
 	
 <!-- UI components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
-	<s:Button id="loginButton" excludeFrom="loggedout" label="Login To Facebook" 
-			  click="login()"
-			  horizontalCenter="0" verticalCenter="0"/>
+	<s:Button id="loginButton" excludeFrom="loggedout" label="Login To Facebook" click="login()"
+			  horizontalCenter="0" skinClass="skins.FBLoginButtonSkin" verticalCenter="0"/>
 	
 	
 	<s:Form includeIn="loggedout" 
-			left="10" top="10" width="321" height="257">
+			left="10" top="10" width="427" height="454">
 		
 		<s:Image id="userImage" 
 				 width="155" height="131"/>
@@ -82,9 +101,29 @@
 		<s:FormItem width="270" label="Birthday">
 			<s:Label id="birthday" width="170"/>
 		</s:FormItem>
+		<s:FormItem label="Status">
+			<s:Label id="statusLabel"/>
+		</s:FormItem>
+	
+	<s:FormItem label="Post Status">
+		
+		<s:layout>
+			<s:HorizontalLayout/>
+		</s:layout>
+		
+	<s:TextInput id="statusInput" />
+		<s:Button label="Submit"
+				  click="submitPost()"/>
+		
+	</s:FormItem>
+	
+	
 	</s:Form>
-	<s:Button includeIn="loggedout" 
-			  right="17" top="10" 
-			  label="Logout from Facebook" click="logout()"/>
+	
+	
+	
+	
+	<s:Button includeIn="loggedout" right="17" top="10" label="Logout from Facebook" click="logout()"
+			  skinClass="skins.FBLogoutButtonSkin"/>
 	
 </s:WindowedApplication>
