@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
-			   xmlns:s="library://ns.adobe.com/flex/spark" 
-			   xmlns:mx="library://ns.adobe.com/flex/mx" 
-			   minWidth="400" minHeight="500"
-			   creationComplete="init()">
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009"
+			   xmlns:s="library://ns.adobe.com/flex/spark"
+			   xmlns:mx="library://ns.adobe.com/flex/mx"
+			   minWidth="400" minHeight="500" creationComplete="init()" currentState="loggedin">
 	
 	
 	<!-- Scripts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
@@ -60,7 +59,9 @@
 	
 	<!-- UI components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
-	<s:Button id="loginButton" excludeFrom="loggedout" label="Login To Facebook" click="login()"
+	<s:Button id="loginButton" 
+			  excludeFrom="loggedout" 
+			  label="Login To Facebook" click="login()"
 			  horizontalCenter="0" skinClass="skins.FBLoginButtonSkin" verticalCenter="0"/>
 	
 	
@@ -98,7 +99,9 @@
 	
 	
 	
-	<s:Button includeIn="loggedout" right="17" top="10" label="Logout from Facebook" click="logout()"
+	<s:Button includeIn="loggedout" 
+			  right="17" top="10" label="Logout from Facebook" 
+			  click="logout()"
 			  skinClass="skins.FBLogoutButtonSkin"/>
 	
 	
