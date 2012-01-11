@@ -24,7 +24,7 @@
   <buildTargets>
     <buildTarget buildTargetName="default">
       <actionScriptSettings version="1"/>
-      <airSettings airCertificatePath="" airTimestamp="true" anePathSet="false" version="1">
+      <airSettings airCertificatePath="/Users/doghmen/Desktop/doghmen.p12" airTimestamp="true" anePathSet="true" version="1">
         <airExcludes/>
         <anePaths/>
       </airSettings>
