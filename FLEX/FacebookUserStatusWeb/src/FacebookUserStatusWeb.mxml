@@ -8,6 +8,8 @@
 	
 	<!-- Scripts ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
+	<fx:Script source="scripts/Login.as"/>
+	
 	<fx:Script>
 		<![CDATA[
 			
@@ -15,6 +17,13 @@
 			
 			import mx.controls.Alert;
 			import mx.events.FlexEvent;
+			
+			
+			protected function logout():void {
+				
+				Facebook.logout(logoutHandler);
+				currentState = "loggedin";
+			}
 			
 			private function loginHandler(session:Object, fail:Object):void {
 				
@@ -33,53 +42,11 @@
 				
 			}
 			
-			protected function getHandler(result:Object, fail:Object):void {
-					
-					userName.text = result.name;
-					birthday.text = result.birthday;
-			}
-			private function logoutHandler(response:Object):void {
-				
-			}
-			
-			private function getStatusHandler(result:Object, fail:Object):void {
-				
-				statusLabel.text = result[0].message;	
-			}
-			
-			private function init():void {
-				
-				Facebook.init("354086437950560", loginHandler);
-			}
-			
-			protected function login():void {
-				
-				Facebook.login(loginHandler, {scope:"user_birthday, read_stream, publish_stream"});
-			}
-			
-			protected function logout():void {
-				
-				Facebook.logout(logoutHandler);
-				currentState = "loggedin";
-			}
-			
-			protected function submitPost():void {
-				
-				Facebook.api("/me/feed", submitPostHandler, {message:statusInput.text}, "POST");
-			}
-			
-			protected function submitPostHandler(result:Object, fail:Object):void {
-				
-				statusInput.text =""; 
-				Facebook.api("/me/statuses", getStatusHandler);
-			}
-			
-			
-			
 		]]>
 	</fx:Script>
+	<!--<fx:Script source="scripts/Logout.as"/>-->
 	
-	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	<s:states>
 		<s:State name="loggedout"/>
 		<s:State name="loggedin"/>
@@ -90,8 +57,6 @@
 	<fx:Declarations>
 		<!-- Place non-visual elements (e.g., services, value objects) here -->
 	</fx:Declarations>
-	
-	
 	
 	<!-- UI components ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
