@@ -5,7 +5,7 @@ Expérience professionnelle 2 =========================================
 2) Facebook Application: User informations extraction - for doing statistics - [GraphAPI facebook library, FB, AS]
 3) Flex: flex Test Drive: gestion des employers [Serveurs d'application Php, Java(BlazeDS, .NET 4.0 , ColdFusion 9)]
 
-4) Flex and .NET integration: WebORB 4.5 for .NET/Php/Java
+4) Flex/AJAX and .NET integration: WebORB 4.5 for .NET/Php/Java
 AMF/Remote Object, IIS server
 
 
