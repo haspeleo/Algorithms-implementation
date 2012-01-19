@@ -1,0 +1,88 @@
+
+Expérience professionnelle 2 =========================================
+
+1) Flex in a week: outil de gestion des employers (Application web et Desktop) [Flex Builder 4.6 premium, Action Script 3.0, MVC, Flash]
+2) Facebook Application: User informations extraction - for doing statistics - [GraphAPI facebook library, FB, AS]
+3) Flex: flex Test Drive: gestion des employers [Serveurs d'application Php, Java(BlazeDS, .NET 4.0 , ColdFusion 9)]
+
+4) Flex and .NET integration: WebORB 4.5 for .NET/Php/Java
+AMF/Remote Object, IIS server
+
+
+Expérience professionnelle 1 =========================================
+
+1- Projet Mash: 
+
+Cadre du projet: 
+Le projet MASH cherche à améliorer la performance des techniques d'intelligence artificielle
+actuelles. Il fait intervenir plusieurs acteurs issus du monde de l'apprentissage et l'optimisation.
+
+Objectifs à atteindre: 
+L'objectif de ce projet est la création d'une plateforme comportant un framework de développement, centre d'expérimentation (serveur de simulation et bras robot), documentation, afin de faciliter un développement collaboratif entre plusieurs partenaires.
+L'idée est de résoudre des problèmes de vision, classification, planification complexes en implémentant des heuristiques, planificateurs et solveurs. 
+
+Résultats : Premiers tests en environnement simulé.
+
+2 -  Projet MCTS 
+2 - 1 MCTS: Programme joueur de Go MoGo
+
+Contexte:
+
+Techniques: 
+Fouille d'arbre par Monte-Carlo: Algorithme de prise de décision dans l'incertain sur un (algorithme apparu en 2006) 
+Recherche guidée par un compromis entre exploration/exploitation 
+
+Avantages: 
+ - Anytime: selon le budget en temps qu'on dispose, on peut arrêter la méthode quand on veut avec une garantie de solution relativement optimale. 
+ - Peut faire face à une forte explosion combinatoire .
+ - Peu sensible à l'abscence de fonction d'évaluation.
+ - Passe à l'échelle (plus performant dans les problèmes de grande dimension).
+
+Applications: jeu de Go (benchmark classique), gestion de la production électrique, 
+compagne publicitaire, gestion de portefeuille financier, optimisation des crash-tests dans le domaine automobile. 
+
+Réalisations: Plusieurs records pour MoGo, valorisation de la méthode auprès des industriels, participation à des évènements grand public (workshops, AFIA, ROADEF, sciences en fêtes). 
+
+2 - MCTS pour l'optimisation de la gestion de la production: application à la gestion de stocks  hydrauliques
+
+Contexte:
+L'état de l'art des politiques pour la planification de la gestion de la production de l'énergie, ne fait que approximer le problème (programmation ion linéaire sur un ensemble fini de scénarios, programmation dynamique sur le même problème mais approché). 
+MCTS (Monte-Carlo Tree Search) apparait comme un bon candidat pour converger à une solution exacte à ces problèmes. 
+Application à la gestion de production électrique: barrages d'eau. 
+
+Résultat: Publication de 2 articles décrivant la technique utilisée et sa performance. 
+ 
+
+3) Mission à Taiwan 
+
+Il s'agit d'essayer d'extraire les règles auprès des experts (professionnels de Go Taiwanais). 
+Dans une seconde étape, construire une base de règles pour les ouvertures dans le cadre du jeu de Go (initialisation de l'algorithme). 
+Enfin, tester l'implémentation (plan d'expériences sur grille de calcul) et la valider auprès du client final (ici professionnels de Go). 
+
+
+ETUDES ==========================================
+
+4) Thèse de Master 
+
+Raffinement d'abstraction de composants matériels pour la vérification par model checking. 
+vérification formelle, modelchecking, 
+SAT solving, logique temporelle 
+
+
+5) Thèse de Maîtrise 
+
+Système de gestion de e-learning : approche basée sur les metadonnées formelles pour 
+l'aide à l'apprentissage en ligne. Module intégré dans la plateforme Moodle. 
+Thèmes: intelligence artificielle , apprentissage, metadonnées, web sémantique. 
+
+6) Assistant stagiaire - Société Tunisienne des Industries de Raffinage 
+
+Tâche:
+Ma tâche est de concevoir et implémenter une application de gestion du centre de formation (inscription des stagiaires, disponibilité des format eurs, organiser des expositions d'appareillage...). 
+Résultat:
+Application développée sous Oracle qui a permis une rapidité de réponse pour les stagiaires, une organisation robuste, 
+et le bon déroulement de la formation. 
+
+
+7) Formateur informatique - initiation au Langage C 
+Cours d'initiation à la programmation en langage C. 
