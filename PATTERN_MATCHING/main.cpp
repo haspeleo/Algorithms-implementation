@@ -2,7 +2,9 @@
 #include <string>
 #include <vector>
 
-
+/*
+ Pattern matching algorithm
+ */
 using namespace std;
 
 
