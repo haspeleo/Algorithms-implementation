@@ -3,7 +3,7 @@
 #include <vector>
 
 /*
- Pattern matching algorithm
+ Pattern matching algorithm using Rabin Karp
  */
 using namespace std;
 
