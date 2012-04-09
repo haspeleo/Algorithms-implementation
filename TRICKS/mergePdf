@@ -21,4 +21,5 @@ sudo apt-get install imagemagick
 convert *.jpg foo.pdf
 
 #to get a smaller PDF from a PS
+http://astuces.absolacom.com/non-classe/alleger-ou-reduire-la-taille-dun-pdf/
 ps2pdf file.ps
