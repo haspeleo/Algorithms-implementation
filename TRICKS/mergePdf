@@ -1,3 +1,14 @@
+#LaTex tricks
+online latex editors:
+
+
+convert csv data files to latex tables:
+http://mancoosi.org/~abate/latex-tables-csv-files -- call csv file in latex
+https://launchpad.net/csv2latex -- C program
+http://truben.no/latex/table/ -- online table filling 
+
+
+-----------------------------------------------------------------
 #install first gs and pdftk: sudo apt-get install gs pdftk
 #whith gs
 gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=out.pdf *.pdf
