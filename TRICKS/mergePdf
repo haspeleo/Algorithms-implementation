@@ -1,20 +1,18 @@
 #LaTex tricks
-online latex editors:
-
 
 convert csv data files to latex tables:
 http://mancoosi.org/~abate/latex-tables-csv-files -- call csv file in latex
 https://launchpad.net/csv2latex -- C program
 http://truben.no/latex/table/ -- online table filling 
-
-
+http://docs.latexlab.org/docs -- latex editor from google
 -----------------------------------------------------------------
+
 #install first gs and pdftk: sudo apt-get install gs pdftk
 #whith gs
 gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=out.pdf *.pdf
 #of with pdftk
 pdftk in1.pdf in2.pdf cat output combined.pdf 
-
+------------------------------------------------------
 to convert from epub to pdf
 http://epub2pdf.com/
 chmod +x ./epub2pdf.sh 
