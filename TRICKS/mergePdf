@@ -5,6 +5,9 @@ http://mancoosi.org/~abate/latex-tables-csv-files -- call csv file in latex
 https://launchpad.net/csv2latex -- C program
 http://truben.no/latex/table/ -- online table filling 
 http://docs.latexlab.org/docs -- latex editor from google
+
+Latex to html
+http://jeyg.info/convertir-un-document-latex-en-html/
 -----------------------------------------------------------------
 
 #install first gs and pdftk: sudo apt-get install gs pdftk
