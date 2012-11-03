@@ -13,3 +13,11 @@ http://www.linuxforums.org/articles/using-top-more-efficiently_89.html
 
 code completion under vi 
 http://design.liberta.co.za/articles/code-completion-intellisense-for-cpp-in-vim-with-omnicppcomplete/
+
+
+How to auto-format HTML using VIM
+
+1) first join all the lines - ggVGgJ
+2) Now break tags to new lines - :%s/>\s*</>\r</g
+3) Now set filetype - :set ft=html (you can do this before too)
+4) Now Indent - ggVG=
